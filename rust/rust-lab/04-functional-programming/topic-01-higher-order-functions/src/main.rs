@@ -36,7 +36,8 @@ fn thriple_attack_plus_20(attack: i32) -> i32 {
 
 // This is a higher-order order function
 fn calc_final_attack(attack: i32, boost_attack_fn: fn(i32) -> i32) -> i32 {
-    boost_attack_fn(attack)
+    let total_damage: i32 = boost_attack_fn(attack);
+    total_damage
 }
 
 fn main() {

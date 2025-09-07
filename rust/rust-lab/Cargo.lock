@@ -21,3 +21,7 @@ version = "0.1.0"
 [[package]]
 name = "topic-01-vector-basics"
 version = "0.1.0"
+
+[[package]]
+name = "topic-02-named-closures"
+version = "0.1.0"
