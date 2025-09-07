@@ -7,9 +7,9 @@ edition = "2024"
 resolver = "3"
 
 members = [
-  # "01-control-flow/*", 
-  "02-enums/*", 
-  "03-vectors/*", 
-  "04-environment-variables/*"
+  "01-enums/*", 
+  "02-vectors/*", 
+  "03-environment-variables/*",
+  "04-functional-programming/*"
 ]
 [workspace.dependencies]
