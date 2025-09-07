@@ -2,6 +2,8 @@ fn main() {
 
     // How to create an empty Vector
     let mut list_a: Vec<i32> = Vec::new();
+    println!("list_a: {:?}", list_a);
+    // list_a: []
 
     // How to add values to a Vector.
     list_a.push(5);
@@ -10,4 +12,7 @@ fn main() {
 
     // You can use the `vec!` Macro to create a Vector and add values to it.
     let list_b: Vec<i32> = vec![20, 35, 10];
+    println!("list_b: {:?}", list_b);
+    // list_b: [20, 35, 10]
+
 }
