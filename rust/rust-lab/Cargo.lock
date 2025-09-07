@@ -25,3 +25,7 @@ version = "0.1.0"
 [[package]]
 name = "topic-02-named-closures"
 version = "0.1.0"
+
+[[package]]
+name = "topic-03-annoymous-closures"
+version = "0.1.0"
