@@ -10,5 +10,6 @@ members = [
   # "01-control-flow/*", 
   "02-enums/*", 
   "03-vectors/*", 
+  "04-environment-variables/*"
 ]
 [workspace.dependencies]

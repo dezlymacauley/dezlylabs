@@ -11,5 +11,9 @@ name = "topic-01-enum-basics"
 version = "0.1.0"
 
 [[package]]
+name = "topic-01-system-environment-variables"
+version = "0.1.0"
+
+[[package]]
 name = "topic-01-vector-basics"
 version = "0.1.0"
