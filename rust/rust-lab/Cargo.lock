@@ -23,6 +23,10 @@ name = "topic-01-system-environment-variables"
 version = "0.1.0"
 
 [[package]]
+name = "topic-01-the-dot-iter-method"
+version = "0.1.0"
+
+[[package]]
 name = "topic-01-vector-basics"
 version = "0.1.0"
 
@@ -31,7 +35,7 @@ name = "topic-02-named-closures"
 version = "0.1.0"
 
 [[package]]
-name = "topic-02-transfering-ownership-to-a-thread"
+name = "topic-02-the-dot-next-method"
 version = "0.1.0"
 
 [[package]]
