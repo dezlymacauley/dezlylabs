@@ -12,6 +12,7 @@ fn main() {
     // You will get 20 which is wrong. This is because the example above will
     // create a new iterator each time.
 
+    // You have to make the iterator mutable to use `.next()`
     let mut iterator_list_of_numbers: Iter<'_, i32> = list_of_numbers.iter();
 
     let first_number = iterator_list_of_numbers.next();
