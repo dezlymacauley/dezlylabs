@@ -40,6 +40,13 @@ fn calc_final_attack(attack: i32, boost_attack_fn: fn(i32) -> i32) -> i32 {
     total_damage
 }
 
+// This part of the `boost_attack_fn: fn(i32) -> i32` means that the function
+// `calc_final_attack` accepts a function pointer.
+//
+// So when you use `calc_final_attack` you pass in an i32, the name
+// of any function that matches the function signature `fn(i32) -> i32`
+
+
 fn main() {
 
     // NOTE: The reason why this works is because the three functions,

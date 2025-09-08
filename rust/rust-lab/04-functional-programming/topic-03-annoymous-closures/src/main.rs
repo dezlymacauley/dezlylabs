@@ -33,15 +33,12 @@ fn calc_final_attack(attack: i32, boost_attack_fn: fn(i32) -> i32) -> i32 {
 */
 
 fn main() {
-    let first_attack: i32 =
-        calc_final_attack(10, |attack: i32| -> i32 { attack * 2 });
+    let first_attack: i32 = calc_final_attack(10, |attack: i32| attack * 2);
+    let second_attack: i32 = calc_final_attack(10, |attack: i32| attack * 3);
+    let third_attack: i32 = calc_final_attack(10, |attack| (attack * 3) + 20);
 
     println!("first_attack: {first_attack}");
-
-    let second_attack: i32 = calc_final_attack(10, |attack: i32| attack * 3);
     println!("second_attack: {second_attack}");
-
-    let third_attack: i32 = calc_final_attack(10, |attack| (attack * 3) + 20);
     println!("third_attack: {third_attack}");
 }
 

@@ -10,6 +10,7 @@ members = [
   "01-enums/*", 
   "02-vectors/*", 
   "03-environment-variables/*",
-  "04-functional-programming/*"
+  "04-functional-programming/*",
+  "05-threads/*"
 ]
 [workspace.dependencies]
