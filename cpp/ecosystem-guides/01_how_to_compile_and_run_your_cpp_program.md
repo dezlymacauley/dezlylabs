@@ -18,13 +18,22 @@ _______________________________________________________________________________
 ## Creat this project structure
 
 ```sh
+mkdir bin/
 mkdir src/
 touch src/main.cpp
-mkdir bin/
+touch .clang-format
 touch .gitignore
 touch Makefile
 ```
 _______________________________________________________________________________
+### Add this to the `.clang-format` format file
+
+```
+BasedOnStyle: Google
+IndentWidth: 4
+```
+_______________________________________________________________________________
+
 ### Add this to `src/main.cpp` 
 
 This is the simplest possible C++ program you can create, 
@@ -49,7 +58,7 @@ Makefile
  
 run:
 	mkdir -p bin/
-	clang -x c++ src/main.cpp -o bin/main
+	clang++ src/main.cpp -o bin/main
 	./bin/main
 
 clean:
@@ -77,18 +86,13 @@ not exist.
 ```
 run:
     mkdir -p bin/
-    clang -x c++ src/main.cpp -o bin/main
+	clang++ src/main.cpp -o bin/main
     ./bin/main
 ```
 
-`clang -x c++ src/main.cpp -o bin/main` means that clang will be used 
+`clang++ src/main.cpp -o bin/main` means that clang++ will be used 
 to compile `src/main.cpp` into and executable binary that will be saved in
 `bin/main`
-
-The `-x` in `clang -x c++` means explict language mode. Clang can also be
-use to compile C code. 
-
-So this setting makes it explict that you are compiling a C++ file.
 
 _______________________________________________________________________________
 ## Run these commands from the root directory of you project
@@ -103,4 +107,12 @@ _______________________________________________________________________________
 If `run` is the first command in your Makefile, then you can use the command:
 `make`
 
+_______________________________________________________________________________
+
+To delete the `bin/` directory to save space on your system, 
+you can use this command:
+
+```sh
+make clean
+```
 _______________________________________________________________________________

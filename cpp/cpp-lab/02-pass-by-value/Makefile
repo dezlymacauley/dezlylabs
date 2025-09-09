@@ -3,7 +3,7 @@
 
 run:
 	mkdir -p bin/
-	clang -x c++ src/main.cpp -o bin/main
+	clang++ src/main.cpp -o bin/main
 	./bin/main
 
 clean:
