@@ -9,12 +9,15 @@ resolver = "3"
 members = [
   "01-basic-variable-types/*",
   "02-environment-variables/*",
-  "03-pointers/*",
-  "04-vectors/*",
-  "05-enums/*", "05-functions/topic-01-rust-does-not-support-function-overloading",
-  "06-functional-programming/*",
-  "07-iterators/*",
-  "08-threads/*"
+  "03-control-flow/*",
+  "04-pointers/*",
+  "05-vectors/*",
+  "06-enums/*",
+  "07-functions/*",
+  "08-structs/*",
+  "09-functional-programming/*",
+  "10-iterators/*",
+  "11-threads/*"
 ]
 
 [workspace.dependencies]

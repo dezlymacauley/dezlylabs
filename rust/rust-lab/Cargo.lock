@@ -7,6 +7,10 @@ name = "rust_lab"
 version = "0.1.0"
 
 [[package]]
+name = "topic-01-a"
+version = "0.1.0"
+
+[[package]]
 name = "topic-01-basics-of-smart-pointers"
 version = "0.1.0"
 
@@ -20,6 +24,10 @@ version = "0.1.0"
 
 [[package]]
 name = "topic-01-higher-order-functions"
+version = "0.1.0"
+
+[[package]]
+name = "topic-01-if-statement"
 version = "0.1.0"
 
 [[package]]
@@ -47,6 +55,10 @@ name = "topic-02-deterministic-destruction"
 version = "0.1.0"
 
 [[package]]
+name = "topic-02-if-else-statement"
+version = "0.1.0"
+
+[[package]]
 name = "topic-02-named-closures"
 version = "0.1.0"
 
@@ -56,6 +68,10 @@ version = "0.1.0"
 
 [[package]]
 name = "topic-03-annoymous-closures"
+version = "0.1.0"
+
+[[package]]
+name = "topic-03-if-else-if-else-statement"
 version = "0.1.0"
 
 [[package]]
