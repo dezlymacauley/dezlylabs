@@ -7,12 +7,14 @@ edition = "2024"
 resolver = "3"
 
 members = [
-  "01-enums/*", 
-  "02-vectors/*", 
-  "03-environment-variables/*",
-  "04-functional-programming/*",
-  "05-threads/*", 
-  "06-iterators/*"
+  "01-basic-variable-types/*",
+  "02-environment-variables/*",
+  "03-pointers/*",
+  "04-vectors/*",
+  "05-enums/*", "05-functions/topic-01-rust-does-not-support-function-overloading",
+  "06-functional-programming/*",
+  "07-iterators/*",
+  "08-threads/*"
 ]
 
 [workspace.dependencies]

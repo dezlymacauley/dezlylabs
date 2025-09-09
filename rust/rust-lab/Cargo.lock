@@ -7,6 +7,10 @@ name = "rust_lab"
 version = "0.1.0"
 
 [[package]]
+name = "topic-01-basics-of-smart-pointers"
+version = "0.1.0"
+
+[[package]]
 name = "topic-01-creating-a-thread"
 version = "0.1.0"
 
@@ -19,6 +23,14 @@ name = "topic-01-higher-order-functions"
 version = "0.1.0"
 
 [[package]]
+name = "topic-01-rust-does-not-support-function-overloading"
+version = "0.1.0"
+
+[[package]]
+name = "topic-01-scalar-data-types"
+version = "0.1.0"
+
+[[package]]
 name = "topic-01-system-environment-variables"
 version = "0.1.0"
 
@@ -28,6 +40,10 @@ version = "0.1.0"
 
 [[package]]
 name = "topic-01-vector-basics"
+version = "0.1.0"
+
+[[package]]
+name = "topic-02-deterministic-destruction"
 version = "0.1.0"
 
 [[package]]
