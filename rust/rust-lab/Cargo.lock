@@ -63,6 +63,10 @@ name = "topic-02-named-closures"
 version = "0.1.0"
 
 [[package]]
+name = "topic-02-putting-a-thread-to-sleep"
+version = "0.1.0"
+
+[[package]]
 name = "topic-02-the-dot-next-method"
 version = "0.1.0"
 
@@ -76,6 +80,10 @@ version = "0.1.0"
 
 [[package]]
 name = "topic-03-if-else-if-else-statement"
+version = "0.1.0"
+
+[[package]]
+name = "topic-03-join-handle"
 version = "0.1.0"
 
 [[package]]
