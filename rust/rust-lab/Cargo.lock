@@ -7,10 +7,6 @@ name = "rust_lab"
 version = "0.1.0"
 
 [[package]]
-name = "topic-01-a"
-version = "0.1.0"
-
-[[package]]
 name = "topic-01-basics-of-smart-pointers"
 version = "0.1.0"
 
@@ -39,6 +35,10 @@ name = "topic-01-scalar-data-types"
 version = "0.1.0"
 
 [[package]]
+name = "topic-01-struct-basics"
+version = "0.1.0"
+
+[[package]]
 name = "topic-01-system-environment-variables"
 version = "0.1.0"
 
@@ -64,6 +64,10 @@ version = "0.1.0"
 
 [[package]]
 name = "topic-02-the-dot-next-method"
+version = "0.1.0"
+
+[[package]]
+name = "topic-02-the-new-method"
 version = "0.1.0"
 
 [[package]]
