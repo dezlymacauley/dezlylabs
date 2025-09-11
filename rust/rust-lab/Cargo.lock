@@ -93,3 +93,7 @@ version = "0.1.0"
 [[package]]
 name = "topic-03-the-dot-any-method"
 version = "0.1.0"
+
+[[package]]
+name = "topic-03-tuple-structs"
+version = "0.1.0"
