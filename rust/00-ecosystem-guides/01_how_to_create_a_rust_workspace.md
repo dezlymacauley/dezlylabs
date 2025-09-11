@@ -60,3 +60,10 @@ resolver = "3"
 members = []
 [workspace.dependencies]
 ```
+
+To run a specific project from the root directory of your workspace,
+use this command:
+
+```sh
+cargo rq -p project-name
+```
