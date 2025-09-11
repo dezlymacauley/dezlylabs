@@ -17,7 +17,8 @@ members = [
   "08-structs/*",
   "09-functional-programming/*",
   "10-iterators/*",
-  "11-threads/*"
+  "11-threads/*",
+  "12-web-servers-and-apis/*"
 ]
 
 [workspace.dependencies]

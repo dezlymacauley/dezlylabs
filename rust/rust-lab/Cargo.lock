@@ -7,6 +7,10 @@ name = "rust_lab"
 version = "0.1.0"
 
 [[package]]
+name = "topic-01"
+version = "0.1.0"
+
+[[package]]
 name = "topic-01-basics-of-smart-pointers"
 version = "0.1.0"
 
@@ -80,10 +84,6 @@ version = "0.1.0"
 
 [[package]]
 name = "topic-03-if-else-if-else-statement"
-version = "0.1.0"
-
-[[package]]
-name = "topic-03-join-handle"
 version = "0.1.0"
 
 [[package]]
