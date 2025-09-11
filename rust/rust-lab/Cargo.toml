@@ -8,17 +8,18 @@ resolver = "3"
 
 members = [
   "01-basic-variable-types/*",
-  "02-environment-variables/*",
-  "03-control-flow/*",
-  "04-pointers/*",
-  "05-vectors/*",
-  "06-enums/*",
-  "07-functions/*",
-  "08-structs/*",
-  "09-functional-programming/*",
-  "10-iterators/*",
-  "11-threads/*",
-  "12-web-servers-and-apis/*"
+  "02-strings/*",
+  "03-environment-variables/*",
+  "04-control-flow/*",
+  "05-pointers/*",
+  "06-vectors/*",
+  "07-enums/*",
+  "08-functions/*",
+  "09-structs/*",
+  "10-functional-programming/*",
+  "11-iterators/*",
+  "12-threads/*",
+  "13-web-servers-and-apis/*"
 ]
 
 [workspace.dependencies]
