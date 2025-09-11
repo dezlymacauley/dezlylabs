@@ -1,2 +1,5 @@
 # This ensures that every line of code does not exceed 80 characters
 max_width = 80
+
+# Pressing the `Tab` key, inserts 4 spaces
+tab_spaces = 4

@@ -91,9 +91,21 @@ name = "topic-03-if-else-if-else-statement"
 version = "0.1.0"
 
 [[package]]
+name = "topic-03-making-variables-mutable"
+version = "0.1.0"
+
+[[package]]
 name = "topic-03-the-dot-any-method"
 version = "0.1.0"
 
 [[package]]
 name = "topic-03-tuple-structs"
+version = "0.1.0"
+
+[[package]]
+name = "topic-04-constants"
+version = "0.1.0"
+
+[[package]]
+name = "topic-05-shadowing"
 version = "0.1.0"

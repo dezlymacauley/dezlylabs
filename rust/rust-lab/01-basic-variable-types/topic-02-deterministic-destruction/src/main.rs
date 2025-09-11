@@ -30,5 +30,6 @@ fn main() {
 }   // The scope ends here.
 // After the line above, the variables num1, num2, and num3
 // can't be accessed because they will be dropped from scope.
-// They will be dropped from scope in this order.
+//
+// They will be dropped from scope in this order:
 // num3, num2, num1
