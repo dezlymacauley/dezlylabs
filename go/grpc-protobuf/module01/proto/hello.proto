@@ -1,0 +1,25 @@
+// This means that the text in this file will be using the proto3 syntax
+syntax = "proto3";
+
+// Create a package name and a version number.
+package hello.v1;
+
+// Ensure that this is the same as what is in your `go.mod` file
+// module github.com/dezlymacauley/module1/directory-where-this-file-is
+option go_package = "github.com/dezlymacauley/module1/proto";
+
+// Create a message definition
+
+// When you compile this file using `protoc`, 
+// it will generate a single Go file which will contain 
+// a struct called person, with a field called `name`.
+message Person {
+  string name = 1;
+}
+
+// To compile this file, be in the root directory of your project,
+// then run this command:
+// protoc --go_out=. --go_opt=paths=source_relative proto/hello.proto
+//
+// Then run `go mod tidy` to fix any import issues.
+// Also run `go mod vendor`

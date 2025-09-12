@@ -1,0 +1,19 @@
+// This means I'm using the proto3 syntax
+syntax = "proto3";
+
+package person.v1
+
+// Each field must have a number and those numbers must be unique.
+// The number can't be changed once the message type is in use,
+// because that number is used to identify the field.
+message Person {
+  string name = 1;
+  int32 id = 2;
+  string email = 3;
+  PhoneNumber phone = 4;
+}
+
+message PhoneNumber {
+  string country_code = 1;
+  string number = 2;
+}

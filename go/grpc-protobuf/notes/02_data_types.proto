@@ -1,0 +1,22 @@
+import "google/protobuf/any.proto";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+import "google/protobuf/empty.proto";
+import "google/protobuf/struct.proto";
+
+message PrimitiveTypes {
+  string exampleString = 1;
+  int32 exampleInt32 = 2;
+  int64 exampleInt64 = 3;
+  float exampleFloat = 4;
+  bool exampleBool = 5;
+  bytes exampleBytes = 6;
+}
+
+message AdvancedTypes {
+  google.protobuf.Any exampleAny = 1;
+  google.protobuf.Timestamp exampleTimestamp = 2;
+  google.protobuf.Duration exampleDuration = 3;
+  google.protobuf.Empty exampleEmpty = 4;
+  google.protobuf.Struct exampleStruct = 5;
+}

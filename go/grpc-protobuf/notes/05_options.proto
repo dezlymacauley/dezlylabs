@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package example.v1;
+
+option java_package = "com.example.protobuf";
+option java_multiple_files = true;
+option go_package = "github.com/cshep4/grpc-course/example/proto";
+
+message LabelsExample {
+  option deprecated = true;
+  
+  string name = 1 [deprecated = true];
+  int32 id = 2;
+  
+  enum State {
+    UNKNOWN = 0;
+    PENDING = 1 [deprecated = true];
+    ACTIVE = 2;
+  }
+}

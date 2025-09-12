@@ -1,0 +1,14 @@
+message MyMessage {
+  Status status = 1;
+  
+  oneof identifier {
+    string name = 2;
+    int32 id = 3;
+  }
+}
+
+enum Status {
+  UNSPECIFIED = 0;
+  STARTED = 1;
+  COMPLETED = 2;
+}

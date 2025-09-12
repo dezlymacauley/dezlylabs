@@ -1,0 +1,10 @@
+message CollectionTypes {
+  // Optional fields can be omitted, which may be represented as pointers in some languages like Go.
+  optional string exampleOptional = 1;
+  
+  // Repeated fields can have zero or more values, similar to an array or list.
+  repeated int32 exampleRepeated = 2;
+  
+  // Map fields associate keys with values, like a dictionary or hash table.
+  map<string, int32> exampleMap = 3;
+}
