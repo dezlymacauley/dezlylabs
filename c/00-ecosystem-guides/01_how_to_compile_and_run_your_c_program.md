@@ -58,7 +58,7 @@ Makefile
  
 run:
 	mkdir -p bin/
-	g++ src/main.c -o bin/main
+	gcc src/main.c -o bin/main
 	./bin/main
 
 clean:
