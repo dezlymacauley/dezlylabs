@@ -2,37 +2,42 @@
 _______________________________________________________________________________
 
 ```
-c
-├── 00-ecosystem-guides
-└── c-lab
-cpp
-├── 00-ecosystem-guides
-└── cpp-lab
-docker
-├── 00-ecosystem-guides
-└── docker-lab
-go
-├── 00-ecosystem-guides
-└── go-lab
-html
-├── 00-ecosystem-guides
-├── css-lab
-├── html-lab
-└── tailwindcss-lab
-javascript
-├── 00-ecosystem-guides
-├── nodejs-lab
-├── sveltekit-lab
-├── svelte-lab
-└── typescript-lab
-python
-├── 00-ecosystem-guides
-└── python-lab
-rust
-├── 00-ecosystem-guides
-└── rust-lab
-sql
-├── 00-ecosystem-guides
-├── postgresql-lab
-└── sqlite-lab
+.
+├── assembly
+│   ├── 00-ecosystem-guides
+│   └── 32-bit-arm-assembly-lab
+├── c
+│   ├── 00-ecosystem-guides
+│   └── c-lab
+├── cpp
+│   ├── 00-ecosystem-guides
+│   └── cpp-lab
+├── docker
+│   ├── 00-ecosystem-lab
+│   └── docker-lab
+├── go
+│   ├── 00-ecosystem-guides
+│   └── go-lab
+├── .images
+├── javascript
+│   ├── 00-ecosystem-guides
+│   ├── expo-lab
+│   ├── nextjs-lab
+│   ├── sveltekit-lab
+│   └── typescript-lab
+├── LICENSE
+├── python
+│   ├── 00-ecosystem-guides
+│   └── python-lab
+├── README.md
+├── rust
+│   ├── 00-ecosystem-guides
+│   └── rust-lab
+├── sql
+│   ├── 00-ecosystem-guides
+│   ├── postgresql-lab
+│   └── sqlite-lab
+└── zig
+    ├── 00-ecosystem-guides
+    └── zig-lab
 ```
