@@ -18,18 +18,15 @@ _______________________________________________________________________________
 ├── go
 │   ├── 00-ecosystem-guides
 │   └── go-lab
-├── .images
 ├── javascript
 │   ├── 00-ecosystem-guides
 │   ├── expo-lab
 │   ├── nextjs-lab
 │   ├── sveltekit-lab
 │   └── typescript-lab
-├── LICENSE
 ├── python
 │   ├── 00-ecosystem-guides
 │   └── python-lab
-├── README.md
 ├── rust
 │   ├── 00-ecosystem-guides
 │   └── rust-lab
