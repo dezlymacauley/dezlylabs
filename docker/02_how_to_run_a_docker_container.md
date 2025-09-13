@@ -53,8 +53,7 @@ This is the latest stable version of Nginx at the time of this guide:
 `1.29.1`
 
 _______________________________________________________________________________
-
-### How to search a docker image
+### How to search for a docker image and its version
 
 This is the official site for Docker Images.
 ```
@@ -69,6 +68,10 @@ This is the official build of Nginx:
 ```
 https://hub.docker.com/_/nginx
 ```
+
+Scroll down to the section: `Supported tags and respective` for available
+versions of the image you want.
+
 _______________________________________________________________________________
 ### How to download a Docker image
 
@@ -198,4 +201,23 @@ _______________________________________________________________________________
 ```
 docker rm nginx_container
 ```
+_______________________________________________________________________________
+### How to delete a docker image
+
+```
+docker image ls
+```
+
+REPOSITORY   TAG        IMAGE ID       CREATED       SIZE
+debian       bookworm   a26cab9e734a   5 days ago    117MB
+nginx        1.29.1     41f689c20910   4 weeks ago   192MB
+
+
+Now you can use the `IMAGE ID` to delete it.
+
+E.g. 
+```
+docker rmi a26cab9e734a
+```
+
 _______________________________________________________________________________
