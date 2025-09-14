@@ -3,11 +3,26 @@ _______________________________________________________________________________
 ## What is a `docker image` and a `docker container`?
 
 A docker image is a blueprint that contains everything you need to run
-a specific application or program.
+a specific application.
 
 A docker container is an isolated environment that let's you run 
 that application or program, 
 without having to install it on your operating system.
+
+A docker image will often have a base layer, 
+which is usually a very minimal version of a Linux distro like Debian.
+
+It may also contains a runtime environment, E.g. Python / Node.js
+
+And any dependencies your app needs. E.g. Python dependencies from PyPi
+or JavaScript dependencies from npm.
+
+You can also have your own source code, and compiled binaries (Rust, Zig).
+
+Config files.
+
+So a Docker image is a snapshot of everything required to run a specific 
+version of your application.
 
 _______________________________________________________________________________
 ### Start the docker service
