@@ -7,10 +7,6 @@ name = "rust_lab"
 version = "0.1.0"
 
 [[package]]
-name = "topic-01"
-version = "0.1.0"
-
-[[package]]
 name = "topic-01-basics-of-smart-pointers"
 version = "0.1.0"
 
