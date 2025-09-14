@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "nextjs-lab",
+      "name": "01-react-concepts",
       "dependencies": {
         "next": "15.5.3",
         "react": "19.1.0",
