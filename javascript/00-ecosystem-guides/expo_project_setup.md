@@ -24,6 +24,17 @@ bun pm trust --all
 
 _______________________________________________________________________________
 
+```sh
+bun run reset-project
+```
+
+```
+Do you want to move existing files to /app-example instead of deleting them?
+(Y/n): n
+```
+
+_______________________________________________________________________________
+
 Open a separate terminal and run this command to open your mobile project 
 as a web app.
 
@@ -33,15 +44,13 @@ on my device, and I don't have a Mac device to test on.
 ```sh
 bun run web
 ```
+
+## The web view is NOT a solution. Many of the React Native components 
+## do not behave normally.
+
 _______________________________________________________________________________
 
-
-
-
-
-
-
-
+### The instructions below are only if you want to use Android studio 
 
 _______________________________________________________________________________
 
