@@ -11,7 +11,7 @@ members = [
   "02-strings/*",
   "03-environment-variables/*",
   "04-control-flow/*",
-  "05-pointers/*",
+  "05-references-and-pointers/",
   "06-vectors/*",
   "07-enums/*",
   "08-functions/*",

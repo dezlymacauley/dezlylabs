@@ -31,6 +31,10 @@ name = "topic-01-if-statement"
 version = "0.1.0"
 
 [[package]]
+name = "topic-01-minimal-http-server"
+version = "0.1.0"
+
+[[package]]
 name = "topic-01-rust-does-not-support-function-overloading"
 version = "0.1.0"
 

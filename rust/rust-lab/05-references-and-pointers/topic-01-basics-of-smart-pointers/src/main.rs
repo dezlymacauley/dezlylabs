@@ -42,6 +42,7 @@ fn main() {
     // The variable `ref_a` itself is stored on the heap.
     let ref_a: &i32 = &a;
 
+
     //_________________________________________________________________________
    
     
