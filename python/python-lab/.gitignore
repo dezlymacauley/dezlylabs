@@ -1,0 +1,10 @@
+# This will ignore all `.ruff_cache/` directories, 
+# no matter where they are in this python lab
+# .ruff_cache is used by Ruff to speed up formating your Python code
+**/.ruff_cache/
+
+# This will ignore all `.mypy_cache/` directories, 
+# no matter where they are in this python lab
+# .mypy_cache is used by mypy to speed up checking 
+# for type errorsin your code.
+**/.mypy_cache/
