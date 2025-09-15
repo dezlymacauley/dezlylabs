@@ -1,5 +1,5 @@
 [package]
-name = "topic-01-minimal-http-server"
+name = "topic-02-box-smart-pointer"
 version = "0.1.0"
 edition = "2024"
 
