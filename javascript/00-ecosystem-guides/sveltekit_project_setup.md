@@ -80,3 +80,20 @@ dependencies with?
 └
 ```
 _______________________________________________________________________________
+
+Open `package.json`
+
+Look for the `scripts` section, then look for this line below:
+
+```
+"dev": "vite dev",
+```
+
+Change it to:
+
+
+```
+"dev": "vite dev --open",
+```
+
+_______________________________________________________________________________
