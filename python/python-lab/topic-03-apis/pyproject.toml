@@ -1,0 +1,14 @@
+[project]
+name = "topic-03-apis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "requests==2.32.5",
+]
+
+# [tool.mypy]
+# ignore_missing_imports = true        # don’t error if stubs don’t exist
+# install_types = true                 # auto-install missing stubs
+# non_interactive = true               # don’t ask before installing stubs

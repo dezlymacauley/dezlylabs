@@ -3,16 +3,15 @@ def say_hello() -> None:
     print("Hello world")
 
 
-say_hello()
-
-# ______________________________________________________________________________
-
-
 def get_server_status(hostname: str, port: int) -> None:
     print(f"hostname: {hostname}")
     print(f"port: {port}")
 
 
-get_server_status("debian", 8080)
+def main() -> None:
+    say_hello()
+    get_server_status("debian", 8080)
 
-# ______________________________________________________________________________
+
+if __name__ == "__main__":
+    main()

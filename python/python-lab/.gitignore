@@ -8,3 +8,11 @@
 # .mypy_cache is used by mypy to speed up checking 
 # for type errorsin your code.
 **/.mypy_cache/
+
+
+# This will ignore all `.venv/` directories, 
+# no matter where they are in this python lab
+# .venv/ is where your project dependencies are installed to when you use
+# `uv add name-of-package==version-number` to install third 
+# party code from PyPi
+**/.venv/
