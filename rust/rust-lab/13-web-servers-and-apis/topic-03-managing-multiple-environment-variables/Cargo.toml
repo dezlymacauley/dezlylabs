@@ -1,0 +1,9 @@
+[package]
+name = "topic-03-managing-multiple-environment-variables"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+config = "0.15.15"
+dotenvy = "0.15.7"
+serde = { version = "1.0.223", features = ["derive"] }
