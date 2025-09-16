@@ -19,7 +19,8 @@ members = [
   "10-functional-programming/*",
   "11-iterators/*",
   "12-threads/*",
-  "13-web-servers-and-apis/*"
+  "13-web-servers-and-apis/*",
+  "14-meta-programming/*"
 ]
 
 [workspace.dependencies]
