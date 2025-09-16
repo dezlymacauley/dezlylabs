@@ -1076,11 +1076,11 @@ name = "topic-02-the-new-method"
 version = "0.1.0"
 
 [[package]]
-name = "topic-03"
+name = "topic-03-annoymous-closures"
 version = "0.1.0"
 
 [[package]]
-name = "topic-03-annoymous-closures"
+name = "topic-03-async-await"
 version = "0.1.0"
 
 [[package]]

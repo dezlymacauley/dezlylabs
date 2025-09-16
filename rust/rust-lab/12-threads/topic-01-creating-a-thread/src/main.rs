@@ -8,8 +8,9 @@ _______________________________________________________________________________c
 
 1. A default Rust program:
 
-Think of this as a company that starts
-off with only one office, and one office manager.
+Think of this as a company that has only one office, 
+and one office manager.
+
 The office is called `fn main`, and the manager is `The Rust Compiler`.
 
 You can think of the `The Rust Compiler` as the most import manager
@@ -17,22 +18,22 @@ of the company. Aka the CEO of the company.
 
 The Rust Compiler is responsible for the `main` progress of the company.
 
-_______________________________________________________________________________c
+_______________________________________________________________________________
 
 2. A Thread:
 
 Think of a thread as an office that your program is given
 to complete all the tasks that you have told it to perform.
 
-_______________________________________________________________________________c
+_______________________________________________________________________________
 
 3. A Join Handle:
 
 Think of this as the office manager for a specific office.
 This manager opens the office, ensures that work is done,
-and then reports back to the CEO (aka the Rust compiler) when work is doen.
+and then reports back to the CEO (aka the Rust compiler) when work is done.
 
-_______________________________________________________________________________c
+_______________________________________________________________________________
 
 Just like how a company can have mutiple offices and mutiple managers,
 it is also possible for a Rust program to have multiple threads and mutiple
