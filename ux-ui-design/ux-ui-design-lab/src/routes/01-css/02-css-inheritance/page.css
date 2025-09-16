@@ -1,0 +1,42 @@
+/* 
+
+ABOUT: CSS inheritance
+
+Most HTML elements do not inherit CSS properties by default.
+
+Here are the properties that inherit by default:
+
+01. color
+02. font
+03. letter-spacing
+04. word-spacing
+05. line-height
+06. text-align
+07. text-indent
+08. text-transform
+09. visibility
+10.cursor
+
+*/
+
+
+div {
+  color: blue;
+}
+
+p {
+  /* This property is set by default */
+  /* You could remove this rule and the results will still be the same */
+  color: inherit;
+}
+
+
+/* 
+
+Any `p` tag with a class of `rebel-paragraph` will not inherit the color of
+the div that it is inside.
+
+*/
+p.rebel-paragraph {
+  color: initial;
+}

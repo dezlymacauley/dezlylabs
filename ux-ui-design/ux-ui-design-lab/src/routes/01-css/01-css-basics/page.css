@@ -1,0 +1,20 @@
+/* 
+
+ABOUT: The basic syntax of CSS rule
+
+html-selector.class-selector {
+  css-property: value;
+  css-property: value;
+}
+
+*/
+
+/*___________________________________________________________________________*/
+/* SECTION: Class Selector */
+
+/* This will target any h1 with the class `cool-heading` */
+h1.cool-heading {
+  color: orangered;
+}
+
+/*___________________________________________________________________________*/
