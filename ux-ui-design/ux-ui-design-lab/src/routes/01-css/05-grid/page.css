@@ -4,3 +4,25 @@ ABOUT: Grid
 
 
 */
+
+div.container {
+  display: grid;
+}
+
+div.item {
+  border: 1px solid #333;
+  background-color: #777;
+  color: yellow;
+}
+
+div.item.item1 {
+
+}
+
+div.item.item2 {
+
+}
+
+div.item.item3 {
+
+}
