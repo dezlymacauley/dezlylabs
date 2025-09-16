@@ -1056,7 +1056,7 @@ name = "topic-02-if-else-statement"
 version = "0.1.0"
 
 [[package]]
-name = "topic-02-macros-with-captures"
+name = "topic-02-macros-that-accept-expressions"
 version = "0.1.0"
 
 [[package]]
@@ -1085,6 +1085,10 @@ version = "0.1.0"
 
 [[package]]
 name = "topic-03-if-else-if-else-statement"
+version = "0.1.0"
+
+[[package]]
+name = "topic-03-macros-that-accept-variables"
 version = "0.1.0"
 
 [[package]]
