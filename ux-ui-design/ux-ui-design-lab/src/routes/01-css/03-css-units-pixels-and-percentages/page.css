@@ -1,0 +1,38 @@
+/* 
+
+ABOUT: CSS Units
+
+px = pixels = This is an absolute unit (fixed sized).
+Its size never changes, even if the screen size changes.
+
+% = percent = This is a relative unit. It is based on the size of the
+parent element.
+
+*/
+
+div.entire-body {
+  color: white;
+  background-color: maroon;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+div.half-of-body {
+  background-color: deeppink;
+  width: 50%;
+}
+
+
+div.container-one {
+  /* background-color: initial; */
+  width: 500px;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+
+div.item {
+  background-color: palevioletred;
+  width: 50%;
+  height: 20px;
+  margin: 5px 0px;
+}
