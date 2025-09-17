@@ -1080,7 +1080,7 @@ name = "topic-02-the-new-method"
 version = "0.1.0"
 
 [[package]]
-name = "topic-02-using-the-stdin-instance"
+name = "topic-02-using-the-read-line-method"
 version = "0.1.0"
 
 [[package]]
@@ -1093,6 +1093,10 @@ version = "0.1.0"
 
 [[package]]
 name = "topic-03-if-else-if-else-statement"
+version = "0.1.0"
+
+[[package]]
+name = "topic-03-input-sanitization"
 version = "0.1.0"
 
 [[package]]

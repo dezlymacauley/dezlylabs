@@ -1,5 +1,5 @@
 [package]
-name = "topic-02-using-the-stdin-instance"
+name = "topic-03-input-sanitization"
 version = "0.1.0"
 edition = "2024"
 

@@ -27,7 +27,7 @@ fn main() {
 
     //_________________________________________________________________________
     
-    // io::stdin() returns an instance of a `Stdin` struct.
+    // The stdin() function creates and an instance of a `Stdin` struct.
     // This struct contains useful methods for getting user input.
     let instance_of_stdin: Stdin = stdin();
 
