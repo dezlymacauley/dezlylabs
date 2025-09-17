@@ -14,7 +14,7 @@ html-selector.class-selector {
 
 /* This will target any h1 with the class `cool-heading` */
 h1.cool-heading {
-  color: orangered;
+	color: orangered;
 }
 
 /*___________________________________________________________________________*/

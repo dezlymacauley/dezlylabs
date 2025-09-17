@@ -19,17 +19,15 @@ Here are the properties that inherit by default:
 
 */
 
-
 div {
-  color: blue;
+	color: blue;
 }
 
 p {
-  /* This property is set by default */
-  /* You could remove this rule and the results will still be the same */
-  color: inherit;
+	/* This property is set by default */
+	/* You could remove this rule and the results will still be the same */
+	color: inherit;
 }
-
 
 /* 
 
@@ -38,5 +36,5 @@ the div that it is inside.
 
 */
 p.rebel-paragraph {
-  color: initial;
+	color: initial;
 }

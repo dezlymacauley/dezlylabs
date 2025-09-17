@@ -1,5 +1,5 @@
 <script>
-  import "./page.css";
+	import "./page.css";
 </script>
 
 <!---------------------------------------------------------------------------->
@@ -18,8 +18,8 @@ is is inside the <body></body> tag.
 <!---------------------------------------------------------------------------->
 
 <div class="container-one">
-  <!-- These will take 25% of its parent, which is container-one  -->
-  <div class="item">Item 1</div>
-  <div class="item">Item 2</div>
-  <div class="item">Item 3</div>
+	<!-- These will take 25% of its parent, which is container-one  -->
+	<div class="item">Item 1</div>
+	<div class="item">Item 2</div>
+	<div class="item">Item 3</div>
 </div>
