@@ -20,7 +20,8 @@ members = [
   "11-iterators/*",
   "12-threads/*",
   "13-web-servers-and-apis/*",
-  "14-meta-programming/*"
+  "14-meta-programming/*",
+  "15-interactive-cli-programming/*"
 ]
 
 [workspace.dependencies]

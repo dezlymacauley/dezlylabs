@@ -29,25 +29,35 @@ sudo systemctl start libvirtd.service libvirtd.socket libvirtd-admin.socket libv
 
 _______________________________________________________________________________
 
+### Instruction from the official docs
+
+```
+https://www.kali.org/docs/virtualization/install-qemu-guest-vm/
+```
+_______________________________________________________________________________
+
 Click `File` -> `New Virtual Machine`
 
 _______________________________________________________________________________
-## Step 1 of 5
+## Step 1 of 4
 
 Connection: QEMU / KVM
 
 Choose how you would like to install the operating system
 
 Select this:
+```sh
+Import existing disk image
 ```
-Local install media (ISO image or CDROM)
-```
+
+Then click `Forward`
 
 _______________________________________________________________________________
 
-## Step 2 of 5
+## Step 2 of 4
 
-Choose ISO or CDROM install media:
+Provide the existing storage path:
+
 
 Click `Browse` -> `Browse Local`
 
@@ -65,6 +75,17 @@ Debian testing (debiantesting)
 ```
 _______________________________________________________________________________
 
+### Continue from here
+
+
+
+
+
+
+
+
+
+
 ## Step 3 of 5
 
 Memory: 3072 MB (3 GB)
@@ -77,23 +98,17 @@ _______________________________________________________________________________
 
 Check the option: `Enable storage for this virtual machine`
 
-Uncheck the optioon `Create a disk image for the virtual machine.`
+Check the option: `Create a disk image for the virtual machine.`
 
-And check the option `Select or create custom storage`
+Leave it at `20 GB`
 
-Then click `Manage`
-
-Select the `virtual-machines` directory.
-
-Select the `kali-linux-2025.2-qemu-amd64.qcow2 80.09 GiB qcow2`
-
-Click `Choose Volume` then click `Forward`
+Click `Forward`
 
 _______________________________________________________________________________
 
 ## Step 5 of 5
 
-Name: Kali Linux
+Name: kali-linux
 
 Then click `Finish`
 
