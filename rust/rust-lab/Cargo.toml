@@ -13,7 +13,7 @@ members = [
   "04-control-flow/*",
   "05-references-and-pointers/*",
   "06-vectors/*",
-  "07-enums/*",
+  "07-enums-and-error-handling/*",
   "08-functions/*",
   "09-structs/*",
   "10-functional-programming/*",

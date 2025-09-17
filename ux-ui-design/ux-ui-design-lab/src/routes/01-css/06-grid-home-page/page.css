@@ -1,0 +1,16 @@
+/* .grid-container { */
+/*   display: grid; */
+/*   grid-template-columns: 1fr 150px; */
+/*   grid-template-rows: auto auto 1fr auto; */
+/* } */
+
+.grid-container {
+  display: grid;
+
+  /* The height of each row */
+  grid-template-rows: auto auto auto auto;
+
+  /* The width of each column */
+  /* grid-template-columns: 100px 50px; */
+  grid-template-columns: auto auto;
+}

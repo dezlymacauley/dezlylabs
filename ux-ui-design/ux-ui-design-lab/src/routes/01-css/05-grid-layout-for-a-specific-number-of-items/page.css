@@ -1,0 +1,39 @@
+/* 
+
+ABOUT: Grid
+
+*/
+
+div.container {
+  /* This enables the use of grid layout properties */
+  display: grid;
+
+  /* The height of each row */
+  /* First row is 50px tall, and second row is 100 px tall*/
+  grid-template-rows: 50px 100px;
+
+  /* The width of each column */
+  /* First column is 100px wide, and second column is 100 px wide*/
+  grid-template-columns: 100px 50px;
+
+  /* This is how you create a 2 x 2 layout for 4 items*/
+
+}
+
+div.item {
+  border: 1px solid #333;
+  background-color: #777;
+  color: yellow;
+}
+
+div.item.item1 {
+
+}
+
+div.item.item2 {
+
+}
+
+div.item.item3 {
+
+}

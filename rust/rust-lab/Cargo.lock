@@ -1049,6 +1049,10 @@ name = "topic-02-deterministic-destruction"
 version = "0.1.0"
 
 [[package]]
+name = "topic-02-error-handling"
+version = "0.1.0"
+
+[[package]]
 name = "topic-02-getting-environment-variables-with-dotenvy"
 version = "0.1.0"
 dependencies = [
@@ -1089,6 +1093,10 @@ version = "0.1.0"
 
 [[package]]
 name = "topic-03-async-await"
+version = "0.1.0"
+
+[[package]]
+name = "topic-03-explicitly-calling-panic"
 version = "0.1.0"
 
 [[package]]
