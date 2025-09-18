@@ -1,5 +1,5 @@
 [package]
-name = "topic-03-explicitly-calling-panic"
+name = "topic-09-error-handling"
 version = "0.1.0"
 edition = "2024"
 

@@ -1,5 +1,5 @@
 [package]
-name = "topic-02-error-handling"
+name = "topic-03-discriminant-values"
 version = "0.1.0"
 edition = "2024"
 

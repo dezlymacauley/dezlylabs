@@ -1,5 +1,5 @@
 [package]
-name = "topic-02-enum-with-custom-discriminant-values"
+name = "topic-08-explicitly-calling-panic"
 version = "0.1.0"
 edition = "2024"
 

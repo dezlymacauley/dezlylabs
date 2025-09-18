@@ -1,11 +1,3 @@
-/* 
-
-ABOUT::
-
-This is how to create an enum with its own discriminant values.
-
-*/
-
 #[allow(dead_code)]
 enum MenuChoice {
     StartNewGame = 10,
@@ -13,6 +5,8 @@ enum MenuChoice {
     GameplaySettings = 20,
     QuitGame = 4,
 }
+
+use MenuChoice::*;
 
 fn main() {
 
@@ -27,7 +21,7 @@ fn main() {
 
     */
 
-    let menu_selected = MenuChoice::GameplaySettings;
+    let menu_selected = GameplaySettings;
     println!(
         "Selected the enum variant with the discriminant value of {}",
         menu_selected as i32

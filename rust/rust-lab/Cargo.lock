@@ -1045,15 +1045,11 @@ name = "topic-02-box-smart-pointer"
 version = "0.1.0"
 
 [[package]]
+name = "topic-02-bringing-enum-variants-into-scope"
+version = "0.1.0"
+
+[[package]]
 name = "topic-02-deterministic-destruction"
-version = "0.1.0"
-
-[[package]]
-name = "topic-02-enum-with-custom-discriminant-values"
-version = "0.1.0"
-
-[[package]]
-name = "topic-02-error-handling"
 version = "0.1.0"
 
 [[package]]
@@ -1100,7 +1096,7 @@ name = "topic-03-async-await"
 version = "0.1.0"
 
 [[package]]
-name = "topic-03-explicitly-calling-panic"
+name = "topic-03-discriminant-values"
 version = "0.1.0"
 
 [[package]]
@@ -1145,7 +1141,27 @@ name = "topic-04-constants"
 version = "0.1.0"
 
 [[package]]
+name = "topic-04-enum-with-custom-discriminant-values"
+version = "0.1.0"
+
+[[package]]
+name = "topic-05-adding-methods-to-enums"
+version = "0.1.0"
+
+[[package]]
 name = "topic-05-shadowing"
+version = "0.1.0"
+
+[[package]]
+name = "topic-06-enums-with-tuple-variants"
+version = "0.1.0"
+
+[[package]]
+name = "topic-06-explicitly-calling-panic"
+version = "0.1.0"
+
+[[package]]
+name = "topic-07-error-handling"
 version = "0.1.0"
 
 [[package]]

@@ -1,5 +1,5 @@
 [package]
-name = "topic-03-adding-methods-to-enums"
+name = "topic-04-enum-with-custom-discriminant-values"
 version = "0.1.0"
 edition = "2024"
 
