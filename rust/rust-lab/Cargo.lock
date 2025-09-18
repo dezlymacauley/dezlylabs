@@ -1049,6 +1049,10 @@ name = "topic-02-deterministic-destruction"
 version = "0.1.0"
 
 [[package]]
+name = "topic-02-enum-with-custom-discriminant-values"
+version = "0.1.0"
+
+[[package]]
 name = "topic-02-error-handling"
 version = "0.1.0"
 
