@@ -1157,11 +1157,15 @@ name = "topic-06-enums-with-tuple-variants"
 version = "0.1.0"
 
 [[package]]
-name = "topic-06-explicitly-calling-panic"
+name = "topic-07-enums-with-struct-variants"
 version = "0.1.0"
 
 [[package]]
-name = "topic-07-error-handling"
+name = "topic-08-explicitly-calling-panic"
+version = "0.1.0"
+
+[[package]]
+name = "topic-09-error-handling"
 version = "0.1.0"
 
 [[package]]

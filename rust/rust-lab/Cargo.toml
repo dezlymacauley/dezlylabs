@@ -18,7 +18,7 @@ members = [
   "09-structs/*",
   "10-functional-programming/*",
   "11-iterators/*",
-  "12-threads/*",
+  "12-current-programming/*",
   "13-web-servers-and-apis/*",
   "14-meta-programming/*",
   "15-interactive-cli-programming/*"
