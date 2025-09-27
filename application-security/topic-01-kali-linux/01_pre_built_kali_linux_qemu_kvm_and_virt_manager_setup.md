@@ -184,3 +184,31 @@ _______________________________________________________________________________
 Now you are ready to go.
 
 _______________________________________________________________________________
+### If you run into the `default network is not active` error
+
+Step 1
+```
+❯ sudo virsh net-list
+
+[sudo] password for dezlymacauley:
+ Name   State   Autostart   Persistent
+----------------------------------------
+```
+
+Step 2
+```
+❯ sudo virsh net-start default
+Network default started
+
+```
+
+Step 3
+```
+❯ sudo virsh net-list
+
+ Name      State    Autostart   Persistent
+--------------------------------------------
+ default   active   no          yes
+```
+
+ _______________________________________________________________________________
