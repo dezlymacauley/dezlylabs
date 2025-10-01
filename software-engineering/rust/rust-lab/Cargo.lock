@@ -1145,6 +1145,10 @@ name = "topic-04-enum-with-custom-discriminant-values"
 version = "0.1.0"
 
 [[package]]
+name = "topic-04-intro-to-concurrency"
+version = "0.1.0"
+
+[[package]]
 name = "topic-05-adding-methods-to-enums"
 version = "0.1.0"
 
