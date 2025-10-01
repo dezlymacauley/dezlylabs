@@ -1177,6 +1177,10 @@ name = "topic-07-the-move-keyword"
 version = "0.1.0"
 
 [[package]]
+name = "topic-08-creating-channels"
+version = "0.1.0"
+
+[[package]]
 name = "topic-08-explicitly-calling-panic"
 version = "0.1.0"
 
