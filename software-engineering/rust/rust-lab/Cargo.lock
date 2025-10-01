@@ -1161,11 +1161,19 @@ name = "topic-05-thread-with-for-loop-and-join-handle"
 version = "0.1.0"
 
 [[package]]
+name = "topic-06-a-vector-of-join-handles"
+version = "0.1.0"
+
+[[package]]
 name = "topic-06-enums-with-tuple-variants"
 version = "0.1.0"
 
 [[package]]
 name = "topic-07-enums-with-struct-variants"
+version = "0.1.0"
+
+[[package]]
+name = "topic-07-the-move-keyword"
 version = "0.1.0"
 
 [[package]]
