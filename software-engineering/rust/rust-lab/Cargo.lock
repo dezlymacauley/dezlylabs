@@ -1189,6 +1189,14 @@ name = "topic-09-error-handling"
 version = "0.1.0"
 
 [[package]]
+name = "topic-09-processing-a-text-file-sequentially"
+version = "0.1.0"
+
+[[package]]
+name = "topic-10-reading-from-text-file-using-threads"
+version = "0.1.0"
+
+[[package]]
 name = "tower"
 version = "0.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"

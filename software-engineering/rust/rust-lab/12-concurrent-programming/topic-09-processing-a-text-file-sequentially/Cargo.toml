@@ -1,0 +1,6 @@
+[package]
+name = "topic-09-processing-a-text-file-sequentially"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
