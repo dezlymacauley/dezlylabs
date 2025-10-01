@@ -1145,7 +1145,7 @@ name = "topic-04-enum-with-custom-discriminant-values"
 version = "0.1.0"
 
 [[package]]
-name = "topic-04-intro-to-concurrency"
+name = "topic-04-thread-with-for-loop"
 version = "0.1.0"
 
 [[package]]
@@ -1154,6 +1154,10 @@ version = "0.1.0"
 
 [[package]]
 name = "topic-05-shadowing"
+version = "0.1.0"
+
+[[package]]
+name = "topic-05-thread-with-for-loop-and-join-handle"
 version = "0.1.0"
 
 [[package]]

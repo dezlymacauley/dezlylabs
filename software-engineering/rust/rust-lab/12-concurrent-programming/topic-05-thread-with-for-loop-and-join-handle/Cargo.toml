@@ -1,5 +1,5 @@
 [package]
-name = "topic-04-intro-to-concurrency"
+name = "topic-05-thread-with-for-loop-and-join-handle"
 version = "0.1.0"
 edition = "2024"
 
