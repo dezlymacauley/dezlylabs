@@ -24,7 +24,7 @@
 // which is part of the Rust standard library.
 // The sync module contains useful tools for keeping data in sync during 
 // concurrent programming.
-use std::sync::Mutex;
+use std::sync::{Mutex, MutexGuard};
 
 fn check_balance(account: &Mutex<i32>) {
     // When a part of the program wants to read or modify the value of account,
@@ -34,7 +34,11 @@ fn check_balance(account: &Mutex<i32>) {
     // In this case I'm just using `.unwrap()` which is not graceful.
     // If this succeeds the lock (exclusive access) will be granted to the 
     // variable `balance`.
-    let balance = account.lock().unwrap();
+
+    // `MutexGuard` is the smart pointer returned by `lock()`.
+    // It provides access to the data inside the Mutex and
+    // automatically releases the lock when it goes out of scope.
+    let balance: MutexGuard<'_, i32> = account.lock().unwrap();
 
     // Now that the lock has been acquired by the variable `balance`
     // we simply dereference balance to get its value.
