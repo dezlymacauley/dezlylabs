@@ -75,13 +75,34 @@ Start minikube
 ```sh
 minikube start
 ```
+❯ minikube start
+😄  minikube v1.37.0 on Arch
+✨  Automatically selected the docker driver
+📌  Using Docker driver with root privileges
+👍  Starting "minikube" primary control-plane node in "minikube" cluster
+🚜  Pulling base image v0.0.48 ...
+💾  Downloading Kubernetes v1.34.0 preload ...
+    > preloaded-images-k8s-v18-v1...:  337.07 MiB / 337.07 MiB  100.00% 1.09 Mi
+    > gcr.io/k8s-minikube/kicbase...:  488.51 MiB / 488.52 MiB  100.00% 790.05
+🔥  Creating docker container (CPUs=2, Memory=3072MB) ...
+🐳  Preparing Kubernetes v1.34.0 on Docker 28.4.0 ...
+🔗  Configuring bridge CNI (Container Networking Interface) ...
+🔎  Verifying Kubernetes components...
+    ▪ Using image gcr.io/k8s-minikube/storage-provisioner:v5
+🌟  Enabled addons: storage-provisioner, default-storageclass
+🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
+
+
 _______________________________________________________________________________
 
 To check that everything is working:
 
-Run this command (you can leave out the dash)
+Run this command (you can leave out the `--client` now)
 ```sh
 kubectl version
 ```
+Client Version: v1.34.1
+Kustomize Version: v5.7.1
+Server Version: v1.34.0
 
 _______________________________________________________________________________

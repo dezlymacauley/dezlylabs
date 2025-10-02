@@ -1201,6 +1201,10 @@ name = "topic-11-mutex"
 version = "0.1.0"
 
 [[package]]
+name = "topic-12-vector-of-threads"
+version = "0.1.0"
+
+[[package]]
 name = "tower"
 version = "0.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
