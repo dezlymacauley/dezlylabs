@@ -1,0 +1,53 @@
+.nav {
+  background-color: #333;
+  color: white;
+
+  /* Displays each element in the container side by side */
+  display: flex;
+
+  /*
+    NOTE: In flexbox there are two axis
+
+    Main axis → by default horizontal (left ↔ right). 
+    Controlled with justify-content.
+
+    Cross axis → by default vertical (top ↕ bottom). 
+    Controlled with align-items.
+  */
+
+
+
+  /*
+    Put the first item at the very start (left).
+    Put the last item at the very end (right).
+    Spread out all the remaining items so that the extra space
+    is distributed evenly between them, but not at the edges.
+  */
+  justify-content: space-between;
+ 
+  /* Centers all flex items along the cross axis (vertical by default) */
+  align-items: center;
+
+  padding: 0.5rem;
+}
+
+.list-of-links {
+  /* Displays each li element in the container side by side */
+  display: flex;
+  cursor: pointer;
+}
+
+span {
+  font-weight: bold;
+}
+
+.link {
+  color: orangered;
+  padding-left: 0.75rem;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #ff8e00;
+}
+
