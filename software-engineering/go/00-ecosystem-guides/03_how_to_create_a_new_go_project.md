@@ -48,15 +48,16 @@ _______________________________________________________________________________
 touch main.go
 ```
 
-Add this to the file:
-```go
+Run this command to setup the `main.go` file:
+```sh
+cat > main.go << 'EOF'
 package main
 
 func main() {}
+EOF
 ```
 
 This is the absolute minimum required to compile a Go program.
-
 _______________________________________________________________________________
 ### Run your program
 
