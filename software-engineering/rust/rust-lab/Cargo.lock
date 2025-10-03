@@ -1209,6 +1209,14 @@ name = "topic-13-the-move-keyword-primitive-types"
 version = "0.1.0"
 
 [[package]]
+name = "topic-14-communication-through-channels"
+version = "0.1.0"
+
+[[package]]
+name = "topic-15-understanding-channels"
+version = "0.1.0"
+
+[[package]]
 name = "tower"
 version = "0.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
