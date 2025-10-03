@@ -10,6 +10,12 @@ func slowGreet(phrase string) {
     fmt.Println("Hello", phrase)
 }
 
+// The main function in Go is a goroutine
+// A goroutine is a very lightweight thread.
+// This is not the built-in hardware threads of a processor.
+// These are threads that are specific to Go, and managed by the Go scheduler.
+// The Go scheduler decides when each goroutine runs,
+// and how much processing time it gets.
 func main() {
     // The `go` keyword tells Go to start a goroutine,
     // which allows a function to run concurrently.

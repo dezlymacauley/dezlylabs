@@ -29,12 +29,21 @@ func main() {
     // I'm using `len(shoppingList)` to get the number of items in the
     // shoppingList array.
 
-    // Please note that this must be set before the goroutines start.
-
-    // WARNING: Never add a hardcoded value
-    // Hardcoded values can lead to bugs and crashes if you get the value
-    // wrong.
-    wg.Add(len(shoppingList))
+    // NOTE: I have deliberately created an error here.
+   
+    // There are only 5 items in the shoppingList,
+    // and the `for range` loop will create 5 go routines.
+    // This will lead to a deadlock (when a goroutine is 
+    // blocked indefinately).
+    // 
+    // The deadlock will happen when you call `wg.Wait()` 
+    //
+    // wg.Wait() will block the main thread until it gets the signal that
+    // all goroutines are done. I.e. wg = 0.
+    // This will never happen because the sixth goroutine does not exist,
+    // and therefore, wg will be stuck at `wg = 1` forever, 
+    // which will block the goroutine `func main()`
+    wg.Add(6)
 
     for index, value := range shoppingList{
         go printSomething(fmt.Sprintf("%d: %s", index, value), &wg)
