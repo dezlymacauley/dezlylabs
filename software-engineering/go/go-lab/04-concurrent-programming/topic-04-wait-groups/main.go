@@ -42,17 +42,24 @@ func main() {
         go printSomething(fmt.Sprintf("%d: %s", index, value), &wg)
     }
 
+    // This tells the main goroutine to wait until all of the goroutines
+    //  in the Wait Group have finished processing.
     wg.Wait()
+   
+    // This line will only be printed once the last goroutine 
+    // in the WaitGroup is done.
+    fmt.Println("Let's go!!!")
 
-    wg.Add(1)
-	printSomething("This is the second message to be printed", &wg)
-
-
-// 4: e
-// 2: c
-// 0: a
-// 1: b
-// 3: d
-// This is the second message to be printed
+    // NOTE: Please note that in this specific scenario where a goroutine
+    // is created each time a `for range` loop runs,
+    // the order that the messages are printed will be different each time
+    // the loop runs.
+    //
+    // 4: bread
+    // 0: apple
+    // 1: cake
+    // 2: pizza
+    // 3: grape
+    // Let's go!!!
 
 }
