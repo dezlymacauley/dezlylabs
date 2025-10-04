@@ -80,9 +80,6 @@ or data that is sent back by the manager)
 So think of this as a status update. In this case it will return 
 true or false.
 
-Channels don’t have to just send true/false. 
-They can carry data (like strings, ints, structs).
-
 done := make(chan bool)
 
 Step 2: Add the channel (office manager), to the goroutine (the office)
