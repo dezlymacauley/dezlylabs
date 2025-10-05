@@ -1,3 +1,14 @@
+/*
+
+ABOUT: Fixed sized arrays
+
+In Go, a fixed-size array is a collection of elements of the same type, 
+where the number of elements is determined at compile time and cannot change.
+
+fixed-sized arrays are stored on the stack.
+
+*/
+
 package main
 
 import "fmt"
