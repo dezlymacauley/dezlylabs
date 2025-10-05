@@ -1,0 +1,3 @@
+# I will ignore PostgreSQL and Redis until I move this project 
+# to a standalone file.
+db-data/
