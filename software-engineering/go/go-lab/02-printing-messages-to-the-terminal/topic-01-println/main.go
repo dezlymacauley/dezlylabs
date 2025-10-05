@@ -1,21 +1,22 @@
 /*
 
-ABOUT: Println
+ABOUT: println
 
-Println is a function 
+This is for simple debugging.
+It only works with basic variable types:
+
+boolean, integer, floating point, string, pointer types, complex number types
+
+You can't use println to print:
+Slices, arrays, structs, maps, interfaces, channels, functions
 
 */
 
 package main
 
-import "fmt"
-
 func main() {
-    // `Println` will automatically add a newline character at the end.
-    fmt.Println("Hello world");
-    // Hello world
-   
-    // `Println` will automatically add a space between each word.
-    fmt.Println("Zero", "One", "Two");
-    // Zero One Two
+
+	println("Hello world")
+	// Hello world
+    
 }
