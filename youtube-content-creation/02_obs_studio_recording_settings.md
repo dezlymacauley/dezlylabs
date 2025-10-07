@@ -4,8 +4,8 @@ _______________________________________________________________________________
 
 ### General
 
-- Base (Canvas) Resolution: `1920 x 1080`
-- Output(Scaled) Resolution: `1920 x 1080`
+- Base (Canvas) Resolution: `2560x1440`
+- Output(Scaled) Resolution: `2560x1440`
 - Common FPS Values: `30`
 _______________________________________________________________________________
 ## Settings -> Ouput
@@ -33,8 +33,9 @@ _______________________________________________________________________________
 - VAAPI Device: `WhiskeyLake-U GT2 [UHD Graphics 620]`
 - Profile: `High`
 - Level: `Auto`
-- Rate Control: `CQP`
-- QP: `18`
+- Rate Control: `CBR`
+- Bitrate: `60000 Kbps`
+- Keyframe Interval: `2 s`
 _______________________________________________________________________________
 ## Bottom Tray of OBS Studio
 _______________________________________________________________________________
