@@ -25,7 +25,6 @@ There's an area on the top left where it says `Sequences`
 Don't click on Sequences, right click on the black area under it.
 
 Then click `Add clip or folder`
-
 _______________________________________________________________________________
 ### Making your video
 
@@ -58,12 +57,64 @@ the clip does not have any audio and it is just sound.
 _______________________________________________________________________________
 ### Adjust the progress bar of the clip
 
-In the timeline are where it shows the length of the edited video,
+In the timeline area where it shows the length of the edited video,
 there is a blue bar. Drag this bar to the end of your last video. 
-
 _______________________________________________________________________________
-### Fade out
+### Fade out Transition for videos
 
+In the timeline area where your video clips are, there should be a red circle
+in the top right corner of each clip.
+_______________________________________________________________________________
+### Adding Images
 
+Go to the area in Kdenlive where you imported your video files 
+in the timeline and select your images. 
 
+But this time you have to drag and drop it in a different location. 
+
+So all of the clips are dropped on the `V1` line.
+
+The images need to be dropped on the `V2` line above it.
+
+Then you can apply a fade in transition to the logo.
+_______________________________________________________________________________
+### How to transform (edit) and image
+
+Right click on image:
+
+`Insert and Effect` => `Transform`
+
+Now on the right of the timeline area you should have a setting where you
+can just adjust the size and position of the video. 
+_______________________________________________________________________________
+### Tip with cursor movement
+
+- `Shift + Right arrow` will move the cursor 1 second forward.
+
+- `Shift + Left arrow` will move the cursor 1 second backward.
+
+- `Space` to play the video.
+_______________________________________________________________________________
+### Transition
+
+Add move a video to `V2` and move it to the left until it overlaps the 
+video below.
+
+Then on the video above, 
+the on in `V2` click on it and then is above.
+_______________________________________________________________________________
+### Add Title Clips
+
+You can add a gradient to it and click the pencil next to it to get a
+adjust the colour.
+
+Then you can strech the title to take up the length of the video.
+_______________________________________________________________________________
+### Merging everything together
+
+Click on one of the videos in the timeline area 
+and press `Ctrl + A` then right click 
+and press `Create Sequence from Selection`
+
+Then go to `Project`
 _______________________________________________________________________________
