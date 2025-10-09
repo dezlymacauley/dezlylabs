@@ -42,6 +42,11 @@ A web framework written in Go
 ```sh
 go get github.com/gin-gonic/gin
 ```
+
+A SQLite database driver for Go
+```sh
+go get github.com/mattn/go-sqlite3
+```
 _______________________________________________________________________________
 ### Reproducabilty
 

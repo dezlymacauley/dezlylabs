@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# To run this file, cd to the api-testing directory, then run:
+# To run this file, cd to the httpie-api-testing directory, then run:
 # chmod +x create_event.sh
 
 # Run the program:
@@ -16,9 +16,9 @@ http POST 127.0.0.1:8080/events \
 Content-Type:application/json \
 <<'EOF'
 {
-    "name": "Meet Batman ",
-    "description": "Meet the Dark Knight",
-    "location": "Goham City",
+    "name": "Meet Superman",
+    "description": "Meet the Man Of Steel",
+    "location": "Metropolis",
     "dateTime": "2025-01-01T15:30:00.000Z"
 }
 EOF
