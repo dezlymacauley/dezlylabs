@@ -68,10 +68,22 @@ Also ensures reproducible builds.
 _______________________________________________________________________________
 ### Using HTTPie (API testing client)
 
+Sending a GET request with HTTPie
 ```sh
 http GET http://localhost:8080/events
 ```
 
 Alternatively, you can just open that url in the browser.
+
+
+Sending a POST request with HTTPie
+```sh
+http POST http://127.0.0.1:8080/events \
+Name="Conference" \
+Description="Annual tech conference" \
+Location="Cape Town" \
+DateTime="2025-10-10T09:00:00Z" \
+UserID:=1
+```
 
 _______________________________________________________________________________

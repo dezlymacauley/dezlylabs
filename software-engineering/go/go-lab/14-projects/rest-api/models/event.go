@@ -3,16 +3,20 @@ package models
 import "time"
 
 type Event struct {
+    // These are struct tags. They tell Go that these fields are required
+    // when created an instance of Event.
     ID int
-    Name string
-    Description string
-    Location string
-    DateTime time.Time
+    Name string `binding:"required"`
+    Description string `binding:"required"`
+    Location string `binding:"required"`
+    DateTime time.Time `binding:"required"`
     UserID int 
 }
 
 // This is a variable to store the list of events
 // slice literal
+// `events` is private because it is lowercase, so it is only accessible
+// by code inside this `event.go` file
 var events []Event = []Event{}
 
 // This is a method that will be available to each instance of Event.
@@ -23,6 +27,8 @@ func (e Event) Save() {
     events = append(events, e)
 }
 
+// This is an external function that files outside, event.go,
+// can use to view events when they import this file.
 func GetAllEvents() []Event {
     return events
 }
