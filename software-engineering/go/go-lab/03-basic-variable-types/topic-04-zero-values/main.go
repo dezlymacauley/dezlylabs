@@ -4,7 +4,7 @@ import "fmt"
 
 /*
 
-All Go value types have a null-value which is automatically
+All Go value types have a zero-value which is automatically
 assigned to to variable if you declare a variable without explicitly
 setting the value.
 
@@ -21,7 +21,7 @@ func main() {
 
     println(myNum) // 0
     println(accountBalance) // +0.000000e+000
-    println(myMessage) // null-value is an empty string ""
+    println(myMessage) // zero-value is an empty string ""
     println(isOnline) // false
 
     fmt.Println(accountBalance) // 0
