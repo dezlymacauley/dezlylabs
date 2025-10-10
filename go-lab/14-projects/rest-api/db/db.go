@@ -17,15 +17,25 @@ import (
 // can interact with the database.
 var DB *sql.DB
 
+// NOTE: 
+
 // A function to initialize the database
 func InitDB() {
-    // The first parameter is the driver name
-    DB, err := sql.Open("sqlite3", "api.db")
+    var err error
+
+    // The first parameter is the driver name (The type of SQL 
+    // database that you want to use)
+    DB, err = sql.Open("sqlite3", "api.db")
 
     if err != nil {
         // This will make the app crash if it fails 
         // to establish a database connection.
-        panic("")
+        panic("Could not connect to the database")
+    }
+
+    // Check that the DB is actually reachable
+    if err = DB.Ping(); err != nil {
+        panic("Could not ping the database")
     }
 
     // Set the maximum number of connections you 
@@ -35,22 +45,11 @@ func InitDB() {
     // they will have to wait for open connections
     DB.SetMaxOpenConns(10)
 
-    // Sets the maximum unused connections. 
+    // Sets the maximum unused open connections. 
     DB.SetMaxIdleConns(5)
 
     createTables()
 }
-
-// type Event struct {
-//     // These are struct tags. They tell Go that these fields are required
-//     // when created an instance of Event.
-//     ID int
-//     Name string `binding:"required"`
-//     Description string `binding:"required"`
-//     Location string `binding:"required"`
-//     DateTime time.Time `binding:"required"`
-//     UserID int 
-// }
 
 func createTables() {
     createEventsTable := `
@@ -59,11 +58,10 @@ func createTables() {
         name TEXT NOT NULL,
         description TEXT NOT NULL,
         location TEXT NOT NULL,
-        dateTIME DATETIME NOT NULL,
+        dateTime DATETIME NOT NULL,
         user_id INTEGER
     )
     `
-
     _, err := DB.Exec(createEventsTable)
 
     if err != nil {

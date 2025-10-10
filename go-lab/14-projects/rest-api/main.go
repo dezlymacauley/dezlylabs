@@ -10,10 +10,11 @@ import (
 	//_________________________________________________________________________
 	// SUB_SECTION: Developer-Created modules
 
-    // Contains funtions related to to database 
-	"rest-api/db"
+	// Contains functions related to to database
+	// "rest-api/db"
 
 	// Contains the structure of an event and event related functions
+	"rest-api/db"
 	"rest-api/models"
 
 	//_________________________________________________________________________
