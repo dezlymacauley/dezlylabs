@@ -10,6 +10,9 @@ import (
 	//_________________________________________________________________________
 	// SUB_SECTION: Developer-Created modules
 
+    // Contains funtions related to to database 
+	"rest-api/db"
+
 	// Contains the structure of an event and event related functions
 	"rest-api/models"
 
@@ -85,6 +88,9 @@ func createEvent(context *gin.Context) {
 }
 
 func main() {
+
+    db.InitDB()
+    
 	server := gin.Default()
 
 	server.GET("/events", getEvents)

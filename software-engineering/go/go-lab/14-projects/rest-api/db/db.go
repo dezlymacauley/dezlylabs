@@ -37,4 +37,37 @@ func InitDB() {
 
     // Sets the maximum unused connections. 
     DB.SetMaxIdleConns(5)
+
+    createTables()
+}
+
+// type Event struct {
+//     // These are struct tags. They tell Go that these fields are required
+//     // when created an instance of Event.
+//     ID int
+//     Name string `binding:"required"`
+//     Description string `binding:"required"`
+//     Location string `binding:"required"`
+//     DateTime time.Time `binding:"required"`
+//     UserID int 
+// }
+
+func createTables() {
+    createEventsTable := `
+    CREATE TABLE IF NOT EXISTS events (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        description TEXT NOT NULL,
+        location TEXT NOT NULL,
+        dateTIME DATETIME NOT NULL,
+        user_id INTEGER
+    )
+    `
+
+    _, err := DB.Exec(createEventsTable)
+
+    if err != nil {
+        panic("Could not create events table")
+    }
+
 }
