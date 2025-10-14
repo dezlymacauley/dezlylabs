@@ -52,7 +52,7 @@ uv init --bare --python 3.14.0
 _______________________________________________________________________________
 ### Create a `.python-version`
 
-Creat a `.python-version` file
+Create a `.python-version` file
 ```sh
 touch .python-version
 ```
@@ -88,7 +88,7 @@ _______________________________________________________________________________
 touch .gitignore
 ```
 
-Add this to the file
+Edit the file
 ```sh
 cat > .gitignore << 'EOF'
 # The Python virtual environment
