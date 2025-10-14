@@ -5,7 +5,7 @@ This is
 
 */
 
-#include <cstring>
+#include <cstdio>
 #include <iostream>
 #include <vector>
 
@@ -32,6 +32,16 @@ int main() {
    
     // When the vector goes out of scope, C++ will automatically call the
     // destructor of the object when it goes out of scope.
+
+    // How to add to the end of the list
+    listOfNumbers.push_back(90);
+    
+    for (int i = 0; i < listOfNumbers.size(); i++) {
+        cout << listOfNumbers[i] << " ";
+    }
+
+    cout << endl;
+    // 12 30 50 5 17 90
 
     //_________________________________________________________________________
 
