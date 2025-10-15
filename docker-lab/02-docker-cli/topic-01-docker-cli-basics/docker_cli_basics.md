@@ -131,9 +131,9 @@ docker rmi $(docker images -q)
 _______________________________________________________________________________
 ### How to download a Docker image
 
-Always make sure to include the version tag. E.g. Ubuntu 25.10
+Always make sure to include the version tag. E.g. Alpine:3.22.
 ```sh
-docker pull ubuntu:25.10
+docker pull alpine:3.22.2
 ```
 _______________________________________________________________________________
 

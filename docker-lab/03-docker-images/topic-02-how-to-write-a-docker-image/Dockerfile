@@ -1,2 +1,2 @@
-FROM ubuntu:25.10
-CMD ["echo", "This container is using Ubuntu version 25.10"]
+FROM alpine:3.22.2
+CMD ["echo", "This container is using Alpine Linux version 3.22.2"]
