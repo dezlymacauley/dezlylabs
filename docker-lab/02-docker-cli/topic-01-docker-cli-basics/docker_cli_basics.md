@@ -193,6 +193,13 @@ How to stop all containers
 ```sh
 docker stop $(docker ps -q)
 ```
+
+My custom command:
+```sh
+docker_stop_all_containers() {
+    docker stop $(docker ps -q)
+}
+```
 _______________________________________________________________________________
 ### How to remove a container
 
@@ -207,5 +214,12 @@ docker rm subscription-service-mailhog-1
 To remove all containers:
 ```sh
 docker rm $(docker ps -aq)
+```
+
+My custom command
+```sh
+docker_remove_all_containers() {
+    docker rm $(docker ps -aq)
+}
 ```
 _______________________________________________________________________________

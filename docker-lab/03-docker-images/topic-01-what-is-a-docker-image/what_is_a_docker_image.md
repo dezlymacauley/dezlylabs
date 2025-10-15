@@ -12,3 +12,7 @@ A Docker Image contains the following:
 4. Application code: This is your source code or compiled binaries.
 5. Configuration files: This would be things like environment variables.
 _______________________________________________________________________________
+
+A `Dockerfile` is a used to progragmatically create a Docker Image.
+
+_______________________________________________________________________________
