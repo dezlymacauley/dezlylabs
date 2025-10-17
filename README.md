@@ -1,30 +1,22 @@
 # Dezly Labs
 _______________________________________________________________________________
-#### 🔒 Application Security
-#### 🤖 Artificial Intelligence
-_______________________________________________________________________________
-#### Low-Level Systems Programming:
-
-- ⚙️ Assembly
-- 🔹 C
-- 🔷 C++
+#### Low-Level Programming
+- 🔹 C 
+- 🔷 C++ 
 - 🦀 Rust
 - 🦎 Zig
 _______________________________________________________________________________
-#### Back-End Centric Development:
-
+#### Back-End Centric Development
+- 🐚 Bash
 - 🐳 Docker
 - 🐹 Go
-- ☸️ Kubernetes
+- 🐘 PostgreSQL
 - 🐍 Python
-- 🐚 Shell Scripting
-- 🗃️ SQL
+- 🪶 SQLite
 _______________________________________________________________________________
 #### Front-End Centric Development
-
-- 📱 Expo
-- 🌆 Next.js
-- 🌇 SvelteKit
-- 🎨 UX UI Design
-- 📜 TypeScript
+- 🎨 CSS
+- 📜 HTMl
+- ⚛️ React
+- 🪄 TypeScript
 _______________________________________________________________________________
