@@ -38,3 +38,28 @@ Test with HTTPie:
 ```sh
 http GET http://127.0.0.1:3000
 ```
+_______________________________________________________________________________
+
+To dockerize:
+
+Make sure that you are in this directory where your Dockefile is 
+and then run this command:
+```sh
+docker buildx build --load -t my-node-app:0.0.1 ./
+
+```
+
+To run the docker container:
+
+This will map port 3000 on your local machine, 
+with port 3000 on the docker container.
+
+```sh
+docker run -d -p 3000:3000 \
+--name express_app express_app:0.0.1
+```
+
+`--name` is for the container name.
+
+The image is called `express_app`.
+_______________________________________________________________________________
