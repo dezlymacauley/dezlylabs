@@ -2,9 +2,9 @@
   "name": "topic-07-containerize-nodejs-and-expressjs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/main.js"
   },
   "keywords": [],
   "author": "",

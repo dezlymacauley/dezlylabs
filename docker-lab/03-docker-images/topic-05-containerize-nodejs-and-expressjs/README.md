@@ -44,9 +44,13 @@ To dockerize:
 
 Make sure that you are in this directory where your Dockefile is 
 and then run this command:
-```sh
-docker buildx build --load -t my-node-app:0.0.1 ./
 
+`--load` Builds the image and loads it into your local Docker engine, 
+so you can run it with docker run. For local development and testing,
+you almost always want --load.
+
+```sh
+docker buildx build --load -t dezlymacauley/expressjs-app:0.0.1 ./
 ```
 
 To run the docker container:
@@ -55,8 +59,8 @@ This will map port 3000 on your local machine,
 with port 3000 on the docker container.
 
 ```sh
-docker run -d -p 3000:3000 \
---name express_app express_app:0.0.1
+docker run -d -p 127.0.0.1:3000:3000 \
+--name expressjs-app-instance-one dezlymacauley/expressjs-app:0.0.1
 ```
 
 `--name` is for the container name.

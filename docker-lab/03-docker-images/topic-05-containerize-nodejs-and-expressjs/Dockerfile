@@ -15,7 +15,7 @@ RUN npm ci
 
 # This will copy the source code to the working directory of container
 # So `src/` of your local directory will be located in `/app/src/`
-COPY src/ ./
+COPY src/ ./src/
 
 # NOTE: Always copy your source code AFTER you have installed 
 # your dependencies. 
@@ -26,9 +26,11 @@ COPY src/ ./
 # So you don't want Docker to re-install dependencies any time you change 
 # your source code.
  
-# This will allow external access to the container via port 3000 
-# of the container.
+# This will expose port 3000 of the container so that you can access 
+# the container from your machine once the container has been built.
 EXPOSE 3000
 
-# This will run the command `src/node index.js` to start the server.
-CMD ["node", "src/index.js"]
+# Start the server by running `npm run start`
+# This command is run from the container's working directory (`/app`).
+# And `start` is actually a script in `package.json`
+CMD ["npm", "run", "start"]

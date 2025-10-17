@@ -1,0 +1,7 @@
+# This means
+# **/	Match any number of subdirectories, at any depth.
+# *.test.js	Match any file whose name ends with .test.js.
+**/*.test.js
+
+build_image.sh
+check_image.sh
