@@ -1,0 +1,9 @@
+node_modules/
+**.env**
+
+README.md
+how_to_set_environment_variables_using_an_env_file.md
+
+build_image.sh
+run_container.sh
+check_logs.sh

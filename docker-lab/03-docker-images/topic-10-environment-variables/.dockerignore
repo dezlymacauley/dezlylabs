@@ -1,0 +1,7 @@
+node_modules/
+
+README.md
+
+build_image.sh
+run_container.sh
+check_logs.sh
