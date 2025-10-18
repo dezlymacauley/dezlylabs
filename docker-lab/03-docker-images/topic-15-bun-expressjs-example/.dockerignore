@@ -1,0 +1,12 @@
+# Project Dependencies
+node_modules/
+
+# Docker commands
+scripts/
+
+# Git Files
+.git
+.gitignore
+
+# Documentation
+README.md
