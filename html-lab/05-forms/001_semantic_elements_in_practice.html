@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Form Structure</title>
+  </head>
+  <body>
+
+  <!-- 
+    A <form> collects user input and can send it to a server.
+    The action attribute specifies the endpoint to send the data to,
+    and the method attribute (GET or POST) determines how the data is sent.
+  -->
+  <form id="contactForm" action="/contact-us" method="post">
+
+    <!-- Name field -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required />
+    <br>
+
+
+    <!-- Email field -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+    <br>
+
+    <!-- Message field -->
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <br>
+
+    <!-- Submit button -->
+    <button type="submit">Send Message</button>
+
+  </form>
+
+  </body>
+</html>
