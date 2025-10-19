@@ -4,7 +4,7 @@ const app = express();
 
 const port = process.env.PORT; 
 
-app.get("/", (req, res) => {
+app.get("/", (_req, res) => {
   res.send("Hello from Bun and Express.js");
 });
 
