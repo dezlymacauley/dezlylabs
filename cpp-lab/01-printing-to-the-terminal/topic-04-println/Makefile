@@ -3,7 +3,7 @@
 
 run:
 	mkdir -p bin/
-	clang++ -std=c++17 main.cpp -o bin/main
+	clang++ -std=c++23 -Iinclude src/*.cpp -o bin/main
 	./bin/main
 
 clean:
