@@ -26,6 +26,20 @@ public:
         length = 1;
     }
 
+    ~LinkedList() {
+        Node* temp = head;
+        while (temp != nullptr) {
+            // Move the `head` pointer to the next node,
+            // then delete temp (which will be pointing to the previous
+            // node that will be deleted)
+            head = head->next;
+            delete temp;
+
+            // Then update the position of temp.
+            temp = head;
+        }
+    }
+
     void printList() {
         Node* temp = head;
 
@@ -52,8 +66,6 @@ public:
 
 int main() {
     LinkedList* linkedListOne = new LinkedList(4);
-    linkedListOne->printList();
-    // 4
 
     linkedListOne->printFirstValue();
     // The value of the first element is: 4
@@ -63,5 +75,11 @@ int main() {
 
     linkedListOne->printLength();
     // Number of elements in this linked list: 1
+    
+    linkedListOne->printList();
+    // 4
+    
+    // Delete will call the destructor function on the class.
+    delete linkedListOne;
 
 }

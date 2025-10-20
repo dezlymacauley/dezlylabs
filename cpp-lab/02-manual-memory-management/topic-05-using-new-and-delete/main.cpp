@@ -29,7 +29,7 @@
 
     free is the C version.
 
-    delete is te C++ version and it has the ability to call the destructor
+    delete is the C++ version and it has the ability to call the destructor
     of the object.
 
 */
