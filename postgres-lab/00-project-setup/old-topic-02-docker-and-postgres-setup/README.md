@@ -47,9 +47,6 @@ bash 02_create_container_instance.sh
 ```
 _______________________________________________________________________________
 
-
-
-
 #!/usr/bin/env bash
 
 docker exec -it postgres-dojo-instance-01 sh
@@ -86,3 +83,5 @@ SELECT current_user;
  Superuser            | on
  Hot Standby          | off
 (12 rows)
+
+_______________________________________________________________________________
