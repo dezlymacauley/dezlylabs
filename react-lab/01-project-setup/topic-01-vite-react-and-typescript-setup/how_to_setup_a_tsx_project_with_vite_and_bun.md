@@ -4,16 +4,21 @@ _______________________________________________________________________________
 
 Navigate to the location where you want your project directory to be created,
 then run this command:
-
-_______________________________________________________________________________
-
 ```sh
-bun create vite name-of-project \
---template react-ts
+mkdir name-of-project
 ```
 
-bun create vite bun-vite-react-typescript \
+Enter the project directory
+```sh
+cd name-of-project
+```
+_______________________________________________________________________________
+
+Run this command to create the project structure in the current directory
+```sh
+bun create vite ./ \
 --template react-ts
+```
 _______________________________________________________________________________
 
 Choose yes here as this will soon be the default.
@@ -26,31 +31,15 @@ Choose yes here as this will soon be the default.
 ```
 _______________________________________________________________________________
 
-Choose yes to install the project dependencies 
-and start the development server.
+Choose no. This is because I want to use version fox to specify the version
+of bun that I want my project to use, and also because I want to pass
+the `--exact` flag to the `bun install` command.
 
 ```
 ◆  Install with bun and start now?
-│  ● Yes / ○ No
-└
-```
-
-After it is done open a web browser and paste this in to view your website.
+│  ○ Yes / ● No
 
 ```
-http://localhost:5173/
-```
-
-Press `ctrl + c` to close the development server.
-
-_______________________________________________________________________________
-
-To start the server again, open a separate terminal and run this command:
-```sh
-bun dev
-```
-
-Press `ctrl + c` to close the development server.
 
 _______________________________________________________________________________
 
@@ -66,12 +55,70 @@ Open the `package.json` file and look for this line:
 _______________________________________________________________________________
 
 Change it to:
-```
+```json
 "dev": "vite --open --host 127.0.0.1 --port 6969",
 ```
 
-Now when you run the command `bun dev`, 
+Now when you run the command `bun run dev`, 
 it automatically open up your default web browser and start the development 
 server on: `http://127.0.0.1:6969`
 
 _______________________________________________________________________________
+
+You can also change this:
+```json
+"preview": "vite preview"
+```
+
+to this:
+```json
+"preview": "vite preview --open --host 127.0.0.1 --port 7070"
+```
+_______________________________________________________________________________
+
+Finally, go through the `package.json` and remove all of the symbols `^`,
+and `~`
+
+E.g. Change this:
+```
+"react": "^19.1.1",
+```
+
+To this:
+```
+"react": "19.1.1",
+```
+
+Tip: You can use this substitution macro in Neovim
+```
+:%s/\^//gc
+```
+
+```
+:%s/\~//gc
+```
+
+This will ensure that that the exact versions of dependencies are used
+when I run `bun install --exact`
+_______________________________________________________________________________
+
+## TODO: Add a guide for Version Fox
+
+Run this command
+```sh
+vfox use -p bun@1.2.2
+```
+
+This will create a `.tool-versions` file that has the version of Bun 
+that you are using.
+
+_______________________________________________________________________________
+
+Use this is install the exact version of dependencies using Bun
+```sh
+bun install --exact
+```
+_______________________________________________________________________________
+
+
+Press `ctrl + c` to close the development server.
