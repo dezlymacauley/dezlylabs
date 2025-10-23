@@ -26,9 +26,18 @@ and staging.
 
 Naturally this means that Docker Compose can be paired with CI/CD Pipelines.
 
+This is the standalone docker composer
+
 E.g.
 ```sh
 docker-compose up -d
 bash tests.sh
 docker-compose down
+```
+
+NOTE:
+
+This is the new syntax. This is the `compose` plugin
+```sh
+docker compose
 ```

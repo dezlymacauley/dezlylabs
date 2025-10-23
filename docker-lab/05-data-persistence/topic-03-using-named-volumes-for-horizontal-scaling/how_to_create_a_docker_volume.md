@@ -58,3 +58,35 @@ _______________________________________________________________________________
 
 This is called horizontal scalling
 _______________________________________________________________________________
+### Additional Commands:
+
+To inspect a volume:
+```sh
+docker volume inspect website-data
+```
+
+```
+[
+    {
+        "CreatedAt": "2025-10-23T12:45:34+02:00",
+        "Driver": "local",
+        "Labels": null,
+        "Mountpoint": "/var/lib/docker/volumes/website-data/_data",
+        "Name": "website-data",
+        "Options": null,
+        "Scope": "local"
+    }
+]
+[
+    {
+        "CreatedAt": "2025-10-23T12:45:34+02:00",
+        "Driver": "local",
+        "Labels": null,
+        "Mountpoint": "/var/lib/docker/volumes/website-data/_data",
+        "Name": "website-data",
+        "Options": null,
+        "Scope": "local"
+    }
+]
+```
+_______________________________________________________________________________
