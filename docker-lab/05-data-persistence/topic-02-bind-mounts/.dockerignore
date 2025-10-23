@@ -1,0 +1,24 @@
+# This local `dist` directory is not needed because 
+# it will be re-created inside the containerized instance of the application.
+dist/
+
+# This local `node_modules` directory is not needed because 
+# it will be re-created inside the containerized instance of the application.
+/node_modules/
+
+# These are scripts that simplify docker commands.
+/docker-scripts/
+
+# Git files
+/.git/
+/.gitignore
+
+# This is only needed for the local control of the Bun version
+# The Bun version will be set via the image downloaded in the container
+/.tool-versions
+
+# Documentation
+/README.md
+
+# Linter configuration files
+/eslint.config.js

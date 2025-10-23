@@ -1,0 +1,33 @@
+# ABOUT: This is a Dockerfile for a development
+
+FROM oven/bun:1.2.2-alpine
+
+WORKDIR /app/
+
+COPY ./package.json ./
+COPY ./bun.lock ./
+
+# This will use `Bun` to install the project dependencies 
+# that are listed in  `package.json`
+
+# `--exact` will ensure that the exact version of the dependencies are listed.
+RUN bun install --exact
+
+# This will copy all of the files and directories into the working directory 
+# of the container. With exception of those listed in the `dockerignore` file.
+COPY ./ ./
+
+# This will run the `build` script from the `package.json` file
+# "dev": "vite --host 0.0.0.0 --port 6969",
+
+# NOTE: What is the difference between `RUN` and `CMD`
+
+# `RUN` is for commands that you want to be executed during creation of
+# a Docker image. E.g. Installing project dependencies.
+# E.g. `RUN bun install --exact` 
+
+# `CMD` if for commands that you want to be executed from inside a container
+# instance that has been created from your Docker image.
+CMD [ "bun", "run", "dev" ]
+
+#______________________________________________________________________________
