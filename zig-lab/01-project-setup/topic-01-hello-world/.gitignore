@@ -1,5 +1,0 @@
-# Zig build cache
-.zig-cache/
-
-# Executable binary
-zig-out/
