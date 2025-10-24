@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "topic-002-relative-file-paths"
+name = "topic-03-relative-file-paths"
 version = "0.1.0"

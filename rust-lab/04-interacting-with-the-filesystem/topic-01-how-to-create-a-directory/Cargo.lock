@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "topic-01-how-to-get-the-project-root"
+name = "topic-01-how-to-create-a-directory"
 version = "0.1.0"
