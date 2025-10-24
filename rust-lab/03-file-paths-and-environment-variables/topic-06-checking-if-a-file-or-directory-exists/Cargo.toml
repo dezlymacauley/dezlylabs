@@ -1,0 +1,6 @@
+[package]
+name = "topic-06-checking-if-a-file-or-directory-exists"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]

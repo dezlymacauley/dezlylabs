@@ -1,0 +1,6 @@
+[package]
+name = "topic-02-how-to-get-the-file-path-of-the-current-directory"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]

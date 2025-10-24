@@ -1,0 +1,1 @@
+/home/dezlymacauley/workspace/github-repos/dezlylabs/rust-lab/03-file-paths-and-environment-variables/topic-08-system-environment-variables/target/debug/topic-08-system-environment-variables: /home/dezlymacauley/workspace/github-repos/dezlylabs/rust-lab/03-file-paths-and-environment-variables/topic-08-system-environment-variables/src/main.rs
