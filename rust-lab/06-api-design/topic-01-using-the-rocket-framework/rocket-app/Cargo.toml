@@ -1,0 +1,43 @@
+[package]
+name = "rocket-app"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+#______________________________________________________________________________
+
+# Rocket is backend web framework for Rust 
+# When you add a crate to your dependencies, 
+# you can use curly braces to tell Rust to enable additional features from
+# a module within that crate.
+
+# The reason why you have to do this is because certain crates are quite
+# large so the creators try to keep things minimal by only including the
+# core functionality of the crate if you only specify the version like this:
+# rocket = version = "0.5.1"
+
+# To see what other features you can enable view the docs here.
+# https://docs.rs/rocket/latest/rocket/#features
+# Only `http2` is enabled by default. All other features have to be enabled
+# manually.
+
+# In this case the feature (which enables an optional module 
+# or capability inside the crate) that I am enabling is Rocket's
+# JSON support module.
+# Without this feature, 
+# Rocket won't know how to handle JSON requests/responses in your program.
+
+rocket = { version = "0.5.1", features = ["json"] }
+
+#______________________________________________________________________________
+
+# This is a library for working with JSON data in Rust.
+# This crate is used to convert Rust code 
+# into correctly formatted JSON strings.
+
+# Rocket uses `serde_json` under the hood, however,
+# Rocket does not import everything from serde_json, so you need to import
+# it to have full access.
+
+# serde_json = "1.0.145"
