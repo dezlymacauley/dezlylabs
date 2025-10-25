@@ -32,6 +32,13 @@ rocket = { version = "0.5.1", features = ["json"] }
 
 #______________________________________________________________________________
 
+# This is used for encoding / decoding data
+base64 = "0.22.1"
+
+#______________________________________________________________________________
+
+# NOTE: Not needed. I've checked.
+
 # This is a library for working with JSON data in Rust.
 # This crate is used to convert Rust code 
 # into correctly formatted JSON strings.

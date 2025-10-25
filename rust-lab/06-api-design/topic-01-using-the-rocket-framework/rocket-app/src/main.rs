@@ -1,6 +1,13 @@
-use rocket::{post, get, put, delete, routes};
+use rocket::{post, get, put, delete, catch, catchers, routes};
 use rocket::serde::json::{Value, json};
 use rocket::response::status;
+
+// This is my custom auth module in src/auth.rs
+mod auth;
+use auth::BasicAuth;
+
+//_____________________________________________________________________________
+// SECTION: Auth
 
 //_____________________________________________________________________________
 // SECTION: CRUD Endpoints
@@ -26,7 +33,7 @@ fn create_rustacean() -> Value {
 // SUB_SECTION: Read
 
 #[get("/rustaceans")]
-fn get_rustaceans() -> Value {
+fn get_rustaceans(_auth: BasicAuth) -> Value {
     json!(
         [
         { 
@@ -42,7 +49,7 @@ fn get_rustaceans() -> Value {
 }
 
 #[get("/rustaceans/<id>")]
-fn view_rustacean(id: i32) -> Value {
+fn view_rustacean(id: i32, _auth: BasicAuth) -> Value {
     json!(
         { 
             "id": id,
@@ -67,7 +74,7 @@ fn view_rustacean(id: i32) -> Value {
 // }
 
 #[put("/rustaceans/<id>", format = "json")]
-fn update_rustacean(id: i32) -> Value {
+fn update_rustacean(id: i32, _auth: BasicAuth) -> Value {
     json!(
         {
             "id": id,
@@ -82,8 +89,16 @@ fn update_rustacean(id: i32) -> Value {
 
 // The _ is used to silence the compiler warning about the unused parameter.
 #[delete("/rustaceans/<_id>")]
-fn delete_rustacean(_id: i32) -> status::NoContent {
+fn delete_rustacean(_id: i32, _auth: BasicAuth) -> status::NoContent {
     status::NoContent
+}
+
+//_____________________________________________________________________________
+// SECTION: Custom Error Messages
+
+#[catch(404)]
+fn not_found() -> Value {
+    json!("Not found")
 }
 
 //_____________________________________________________________________________
@@ -104,6 +119,9 @@ async fn main() {
 
             // Delete
             delete_rustacean
+        ])
+        .register("/", catchers![
+            not_found
         ])
         .launch()
         .await;
