@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Form Structure</title>
+  </head>
+  <body>
+    <!-- 
+      It is best practice to wrap a form 
+      in the semantic tag `<section></section>`
+    -->
+    <section>
+      <!--
+        ABOUT: form
+
+        This is an html element that is used to collect user input 
+        and send that input to a server. When working with APIs, 
+        I use HTTPie to send requests to the server.
+
+        The `<form></form>` element does the same thing but it provides a 
+        graphical user interface to send requests to the server.
+      -->
+      <h1>Register</h1>
+
+      <form 
+        action="http:/127.0.0.1:8000/rustaceans" 
+        method="get" 
+        target="_blank"
+      >
+        <button type="submit">View All Rustaceans</button> 
+      </form>
+
+      <!-- 
+        The address bar in the browser will change to this:
+        http://127.0.0.1:8000/rustaceans? 
+
+        The question mark at the end is the syntax for the start of a query string.
+
+        There is nothing being 
+      -->
+    </section> 
+
+    <hr>
+   
+    <!-- NOTE: How to make a GET request with a dynamic parameter -->
+    <section>
+      <h1>Get the detials of a Rustacean By their ID</h1>
+
+      <!-- Target blank is to ensure that the form opens up on a new page -->
+      <form 
+        action="http:/127.0.0.1:8000/rustaceans" 
+        method="get" 
+        target="_blank"
+      >
+        <label>
+          <input type="number" name="id" placeholder="Enter ID" required>
+        </label>
+        <button type="submit">View Details</button> 
+      </form>
+
+      <!-- 
+        The address bar in the browser will change to this:
+        http://127.0.0.1:8000/rustaceans?id=2
+
+        The question mark at the end is the syntax for the start 
+        of a query string.
+        In this case the parameter with the name "id" will be set to 
+        the number entered in the `input` element.
+      -->
+    </section> 
+
+  </body>
+</html>
