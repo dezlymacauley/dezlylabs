@@ -1,0 +1,5 @@
+# The Python virtual environment
+venv/
+
+# Used by ruff to speed up code formatting
+.ruff_cache/ 

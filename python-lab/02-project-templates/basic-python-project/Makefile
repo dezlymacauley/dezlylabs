@@ -6,6 +6,7 @@ run:
 
 clean:
 	rm -rf .venv/
+	rm -rf .ruff_cache/
 
 setup: clean
 	uv sync && direnv allow

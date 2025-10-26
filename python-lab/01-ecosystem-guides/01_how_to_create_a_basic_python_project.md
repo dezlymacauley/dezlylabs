@@ -46,8 +46,19 @@ For the rest of the guide, run these commands from inside this directory.
 _______________________________________________________________________________
 ### Intialize the project by creating a `pyproject.toml` file
 
+Run this command:
 ```sh
-uv init --bare --python 3.14.0
+uv init --bare --python 3.14.0 \
+&& sed -i 's/>=/==/' pyproject.toml
+```
+
+You will get a `pyproject.toml` file that looks like this:
+```toml
+[project]
+name = "basic-python-project"
+version = "0.1.0"
+requires-python = "==3.14.0"
+dependencies = []
 ```
 
 Add this to the end of your `pyproject.toml`
@@ -74,6 +85,23 @@ cat > .python-version << 'EOF'
 EOF
 ```
 _______________________________________________________________________________
+### Create a `.gitignore` file
+
+```sh
+touch .gitignore
+```
+
+Edit the file
+```sh
+cat > .gitignore << 'EOF'
+# The Python virtual environment
+venv/
+
+# Used by ruff to speed up code formatting
+.ruff_cache/ 
+EOF
+```
+_______________________________________________________________________________
 ### Create a `main.py` file
 
 ```sh
@@ -92,23 +120,7 @@ if __name__ == "__main__":
 EOF
 ```
 _______________________________________________________________________________
-### Create a `.gitignore` file
 
-```sh
-touch .gitignore
-```
-
-Edit the file
-```sh
-cat > .gitignore << 'EOF'
-# The Python virtual environment
-venv/
-
-# Used by ruff to speed up code formatting
-.ruff_cache/ 
-EOF
-```
-_______________________________________________________________________________
 ### Create a Python virtual environment
 
 Create a Python virtual environment that uses the `uv-managed` version 
@@ -156,7 +168,7 @@ touch Makefile
 
 Edit the file
 ```sh
-cat > .Makefile << 'EOF'
+cat > Makefile << 'EOF'
 .SILENT:
 .PHONY: run clean setup
 
@@ -165,15 +177,24 @@ run:
 
 clean:
 	rm -rf .venv/
+	rm -rf .ruff_cache/
 
 setup: clean
 	uv sync && direnv allow
 EOF
 ```
 _______________________________________________________________________________
-### If you ever need to rebuild your project just run this command
+### To save on disk space
 
 ```sh
 make clean
+```
+
+_______________________________________________________________________________
+If you ever need to rebuild your project after cleaning,
+or you have just git cloned this repo, then just run this command:
+
+```sh
+make setup
 ```
 _______________________________________________________________________________
