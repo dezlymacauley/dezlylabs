@@ -19,8 +19,20 @@ def main():
     print(f"value_b is {value_b}")
     print(f"value_b is stored at the address {id(value_b):#014x}")
     # value_b is 22
-    # value_b is stored at the address 0x0000017b3768
+    # value_b is stored at the address 0x0000017b3608
 
+    value_b = 50
+    print("value_b was updated to 50")
+
+    print(f"value_a is {value_a}")
+    print(f"value_a is stored at the address {id(value_a):#014x}")
+    # value_a is 11
+    # value_a is stored at the address 0x0000017b3608
+    
+    print(f"value_b is {value_b}")
+    print(f"value_b is stored at the address {id(value_b):#014x}")
+    # value_b is 50
+    # value_b is stored at the address 0x0000017b3ae8
 
 if __name__ == "__main__":
     main()
