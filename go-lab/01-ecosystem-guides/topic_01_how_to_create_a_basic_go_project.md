@@ -49,13 +49,15 @@ _______________________________________________________________________________
 
 ```make
 .SILENT:
-.PHONY: run runbin clean
+.PHONY: run build runbin 
 
 run:
 	go run .
 
-runbin:
+build:
 	go build -o bin/main .
+
+runbin:
 	./bin/main
 
 clean:
