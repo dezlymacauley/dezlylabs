@@ -1,0 +1,5 @@
+# Project dependencies
+/node_modules/
+
+# Everything SvelteKit needs to run your application during development
+/.svelte-kit/
