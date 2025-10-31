@@ -4,7 +4,7 @@ _______________________________________________________________________________
 
 Install the clang package
 ```sh
-sudo pacman --needed clang
+sudo pacman -S --needed clang
 ```
 
 This package includes the following:
@@ -69,8 +69,6 @@ int main() {
    return 0;
 }
 ```
-
-
 _______________________________________________________________________________
 #### `.clang-format`
 
@@ -111,8 +109,7 @@ clean:
 	rm -rf bin/
 ```
 _______________________________________________________________________________
-_______________________________________________________________________________
-## How to run this file
+## How to run your project
 
 Make sure that you are in the root of the project and then run this command:
 
