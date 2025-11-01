@@ -1,0 +1,9 @@
+# Git Files
+/.git/
+/.gitignore
+
+# Documentation
+README.md
+
+# Docker Scripts
+/scripts/
